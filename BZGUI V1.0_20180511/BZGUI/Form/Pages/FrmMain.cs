@@ -26,6 +26,7 @@ namespace BZGUI
     {
         #region 变量定义
         private int i;//////
+        private int j;///HI 
         private Dictionary<BoTech.Button, Control> pageMap = new Dictionary<BoTech.Button, Control>();
         private PageEngineering PageEngineering;
         private Frm_Dialog fdg=new Frm_Dialog();
