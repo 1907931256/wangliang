@@ -1,0 +1,1989 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MMS</name>
+    </assembly>
+    <members>
+        <member name="F:MMS.InfoList.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.InfoList.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.InfoList.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:MMS.mFunction.NSetDO(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            参数：[0板卡，1扩展模块]，[板卡号0-2]，[模块号0-3]，[输出端口号0-15]
+            </summary>
+            <param name="CardType"></param>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.mFunction.mPostion.TeachAxis1">
+            <summary>
+            Teach控件1轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.mFunction.mPostion.TeachAxis2">
+            <summary>
+            Teach控件2轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.mFunction.mPostion.TeachAxis3">
+            <summary>
+            Teach控件3轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.mFunction.mPostion.TeachAxis4">
+            <summary>
+            Teach控件4轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.Card1OfAxis">
+            <summary>
+            第一张板卡的轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.Card2OfAxis">
+            <summary>
+            第二张板卡轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.IniFileName">
+            <summary>
+            My.Application.Info.DirectoryPath + "\Setting.dll"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.AxisTmplPos">
+            <summary>
+            记录轴目标的位置（脉冲）AxisTmplPos(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.LeadLength">
+            <summary>
+            丝杆导成
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.GeerRate">
+            <summary>
+            减速比
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.PlusPerR">
+            <summary>
+            每圈的脉冲数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Tools.AxisSpeed">
+            <summary>
+            轴的速度mm/s
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.NetMonitor.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.NetMonitor.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.NetMonitor.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:MMS.DAQ">
+            <summary>
+            实时采集laser Analog signal
+            </summary>
+        </member>
+        <member name="F:MMS.Datagridshow.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.Datagridshow.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.Datagridshow.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:MMS.EnumShowResult">
+            <summary>
+            show Result Event
+            </summary>
+        </member>
+        <member name="M:MMS.Frm_Engineering.Frm_Engineering_VisibleChanged(System.Object,System.EventArgs)">
+            <summary>
+            界面isShowAxisPara显示否
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MMS.Frm_Engineering.MacStop">
+            <summary>
+            机器停止
+            </summary>
+        </member>
+        <member name="M:MMS.Frm_Engineering.FresshMachinePar">
+            <summary>
+            把1维参数转换成2维的机械参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Frm_Engineering.LoadParAxis">
+            <summary>
+            加载工程界面各轴参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Frm_Engineering.DrawSpline(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Double},System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary> 
+            绘制曲线函数
+            </summary>
+            <param name="listX">X值集合</param>
+            <param name="listY">Y值集合</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="M:MMS.Frm_Par.CheeckPar">
+            <summary>
+            检测参数是否在范围内
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Frm_Production.ExchangeCpkData">
+            <summary>
+            数据交换
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Frm_Production.CalculateYield">
+            <summary>
+            更新生产数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Frm_Production.ShowCurByClick(System.Int32,System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary>
+            鼠标点击，通过环号显示游标，并缩放到响应位置函数
+            </summary>
+            <param name="ringNum">环号</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="T:MMS.Frm_Production.nCPK">
+            ******CPK结构体********
+        </member>
+        <member name="F:MMS.Frm_Parameter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MMS.Frm_Parameter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MMS.Frm_Parameter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MMS.Frm_Laser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MMS.Frm_Laser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MMS.Frm_Laser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MMS.Globals.BZ_ParameterPath">
+            <summary>
+            当前设备重要程序重要参数:"D:\BZ-Parameter\MMS\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Globals.Invoker">
+            <summary>
+            控件委托
+            </summary>
+        </member>
+        <member name="F:MMS.FrmMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MMS.FrmMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MMS.FrmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MMS.FrmManual.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MMS.FrmManual.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MMS.FrmManual.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:MMS.FrmLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MMS.FrmLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MMS.FrmLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:MMS.Module.Setting.SettingFunc.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:MMS.Module.Setting.SettingLaser.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:MMS.Module.Setting.SettingMachineInfo.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:MMS.Module.Setting.SettingPara.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:MMS.FileLog.WriteLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FileLog.OperateLog(System.String)">
+            <summary>
+            记录软件操作
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FileLog.WriteMotionLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FileLog.WriteErrLog(System.String)">
+            <summary>
+            设备异常Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FileLog.Robot_log(System.String)">
+            <summary>
+            机械手运行日志
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Command.TCP_CCD1_Send(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Command.TCP_CCD2_Send(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Command.Com1_Send(System.String)">
+            <summary>
+            串口1发送命令
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Tool.GetArray_Feed4_15(System.Int64,System.Int64,System.Double,System.Double,System.Double[]@,System.Double[]@)">
+            <summary>
+            FEEDER2维矩阵数据表，参数1：行数；参数2：列数；参数3：行间隔；参数4：列间隔；参数5：X方向阵列数据；参数6：Y方向阵列数据。
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FunctionSub.FileInit">
+            <summary>
+            创建路径
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FunctionSub.EnumSerialPortNames">
+             <summary>
+             获取计算机串口
+             </summary>
+             <returns></returns>
+             <remarks></remarks>
+            
+        </member>
+        <member name="M:MMS.FunctionSub.ExChangeXY(System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+             <summary>
+            坐标系换算
+             </summary>
+             <param name="X">CCD坐标的X值</param>
+             <param name="Y">CCD坐标的Y值</param>
+             <param name="A_x">与CCDX方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="A_y">与CCDY方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="Xn">转换后坐标的X值</param>
+             <param name="Yn">转换后坐标的Y值</param>
+             <returns></returns>
+             <remarks></remarks>
+        </member>
+        <member name="M:MMS.FunctionSub.FindRowfromSN(System.String)">
+            <summary>
+            100代表没有，也即是新的条码
+            </summary>
+            <param name="HSG_SN"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FunctionSub.Start_NumberKey_Process">
+            <summary>
+            启动屏幕键盘程序
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.FunctionSub.Close_NumberKey_Process">
+            <summary>
+            关闭屏幕键盘进程函数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2_X">
+            <summary>
+            2站X轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2_Y">
+            <summary>
+            2站Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2_Z">
+            <summary>
+            2站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2_R">
+            <summary>
+            2站R轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2G_Z">
+            <summary>
+            供料Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2G_Y">
+            <summary>
+            供料Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S2L_Z">
+            <summary>
+            拉料Z
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S3_Z">
+            <summary>
+            3站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.BVar.S0_R">
+            <summary>
+            转盘R
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.BVar.RecordErrInfo(System.String)">
+            <summary>
+            异常统计
+            </summary>
+            <param name="ErrInfo"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GTS_ExtmdlInit(System.Int16,System.String)">
+            <summary>
+            gts运动控制卡IO扩展模块初始化
+            </summary>
+            <returns>布尔</returns>
+            <remarks>全局变量Get_ExtDoBit</remarks>
+        </member>
+        <member name="M:MMS.Gg.Set_AllServoON(System.Int16,System.Int16,System.Int16)">
+            <summary>
+            伺服使能
+            </summary>
+            <param name="CardNum">卡编号(0~n)</param>
+            <param name="FirstAxis">卡起始轴编号(1~n)</param>
+            <param name="LastAxis">卡末端轴编号</param>
+            <returns>布尔</returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetDi(System.Int32,System.ValueType)">
+            <summary>
+            获取板卡IO[卡号][0-15][1：有输入,0无]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetDo(System.Int16,System.ValueType)">
+            <summary>
+            读取通用输出：1卡号[0,1]，2索引[0,15]；  返回值：1输出打开，0输出关闭
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.SetDo(System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置通用输出:[卡号],[0,15],[1：打开输出，0：关闭输出]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="doIndex"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetExDi(System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输入：GetExDi(模块[0,255]，IO口[0,15]）返回值：0没有输入，1有输入
+            </summary>
+            <param name="mdl"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetExDo(System.Int16,System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输出
+            </summary>
+            <param name="CardNum"></param> 第几张卡上的扩展卡
+            <param name="mdl"></param>主卡上的第几张扩扎卡
+            <param name="i"></param>读取的IO号
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.SetExDo(System.Int16,System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置扩展输出：[板卡号],[IO模块(0开始)], [端口号(0开始)],[输出值：1打开，0关闭)]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetSts(System.Int16,System.Int16)">
+            <summary>
+            清除各轴的报警,限位和读取轴状态
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetServoOnDi(System.Int16,System.Int16)">
+            <summary>
+            读取轴使能状态:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetHomeDi(System.Int32,System.Int16)">
+            <summary>
+            读取原点信号:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.Get_AlarmDi(System.Int32,System.ValueType)">
+            <summary>
+            读取驱动报警:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetLimitDi_Z(System.Int16,System.Int16)">
+            <summary>
+            读取正限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetLimitDi_F(System.Int16,System.Int16)">
+            <summary>
+            读取负限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.ZSPD(System.Int16,System.Int16)">
+            <summary>
+            判断马达是否停止运动【目标位置和编码器位置差在0.2mm内】
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetEncPos(System.Int16,System.Int16)">
+            <summary>
+            获取编码器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gCardNum"></param>
+            <param name="gAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetEncPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的编码器位置，单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetPrfPos(System.Int16,System.Int16)">
+            <summary>
+            获取规划器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetPrfPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的规划器位置,单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.PlusPerUnit(System.Int16,System.Int16)">
+            <summary>
+            每1mm的脉冲数：丝杆导成，减速比，每圈脉冲数，PlusPerUnit(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <param name="CardNum"></param>
+            <param name="AxisNum"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.GetDist(System.Int16,System.Int16,System.Double)">
+            <summary>
+            把距离或角度转换成脉冲
+            </summary>
+            <param name="gtsard"></param>
+            <param name="mAxis"></param>
+            <param name="mDist"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.StepMotion(System.Int16,System.Int16,System.Double,System.Double,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[移动相对距离],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Dist"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.JogMotion(System.Int16,System.Int16,System.Int32,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.AbsMotion(System.Int16,System.Int16,System.Double,System.Double)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[相对于原点的位移距离],[速度]
+            </summary>
+            <param name="aCardNum"></param>
+            <param name="aAxis"></param>
+            <param name="aPosition"></param>
+            <param name="Vel"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.AxisStop(System.Int16,System.Int16)">
+            <summary>
+            停止轴运动（设置运动速度为0模式）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Gg.AxisStart(System.Int16,System.Int16)">
+            <summary>
+            恢复轴运动（速度0-->原有的速度）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.Mod_ErrorCode.WriteErrorCode(System.String,System.Int32)">
+            <summary>
+            WriteErrorCode（[报警内容] , [报警类型]）
+            </summary>
+            <param name="WriteData"></param>
+            <param name="index"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.Mod_ErrorCode.CheckSystemTimeStep">
+            <summary>
+            系统时间同步步序号
+            </summary>
+        </member>
+        <member name="F:MMS.PVar.FileDirectoryDes">
+            <summary>
+            "D:\\BZ-Program\\"; //复制到本机路径上
+            </summary>
+        </member>
+        <member name="F:MMS.PVar.BZ_ProgramPath">
+            <summary>
+            当前程序存放路径:"D:\BZ-Program\BAM\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_ParameterPath">
+            <summary>
+            当前设备重要程序重要参数:"D:\BZ-Parameter\BAM\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.FileDirectorySrc">
+            <summary>
+            "\\\\169.254.0.10\\live\\";服务器上软件地址
+            </summary>
+        </member>
+        <member name="F:MMS.PVar.BZ_DataPath">
+            <summary>
+            当前设备存放数据路径:"E:\BZ-Data\MMS\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_CheckDataPath">
+            <summary>
+            存放复检数据路径:"E:\BZ-Data\MMS\CheckData\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_LogPath">
+            <summary>
+            运行日志路径："E:\BZ-Data\MMS\RunLog\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_CPKDataFilePath">
+            <summary>
+            CPK数据存ini路径:"D:\BZ-Parameter\BAM\CPKData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_YieldDataFileName">
+             <summary>
+            当天良率存放in路径:"D:\BZ-Parameter\BAM\YieldData.ini"
+             </summary>
+             <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_CalibrationFileName">
+            <summary>
+            标定信息存储路径"D:\BZ-Parameter\BAM\Calibration.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_RobotPosFileName">
+            <summary>
+            机械手里面的点位缓存
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_YieldMonthDataFileName">
+            <summary>
+            当月良率存放路径:"D:\BZ-Parameter\BAM\YieldMonthData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_ErrStatisticsPath">
+            <summary>
+            抛料统计文件路径:"D:\BZ-Parameter\BAM\ErrStatistics.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_PDCALogPath">
+            <summary>
+            PDCA日志记录路径:"E:\BZ-Data\MMS\PDCALog\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_LightSettingPath">
+            <summary>
+            光源参数存放路径:"D:\BZ-Parameter\BAM\LightSetting.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_AlarmHistoryCSVPath">
+            <summary>
+            异常记录CSV文件路径："E:\BZ-Data\MMS\AlarmHistory_Data\BAMAlarmHistory.csv"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.PublicParPath">
+            <summary>
+            "D:\BZ-Parameter\BAM\PublicPar.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.ParAxisPath">
+            <summary>
+            "D:\BZ-Parameter\BAM\ParAxis.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.CPK_SN_Path">
+            <summary>
+            "D:\BZ-Parameter\BAM\CPK_SN.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.IsSysEmcStop">
+            <summary>
+            急停是否按下标志
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.sPDCAData">
+            <summary>
+            16位PDCA数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.DS_Flag">
+            <summary>
+            单双标志，值1为单，2为双
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.LampStatus">
+            <summary>
+            三色灯状态序号：
+            【10】异常报警,
+            【20】设备初始化完毕,
+            【30】机器工作正常,
+            【40】机器空跑,
+            【50】开机无报警
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.Work_Mode">
+            <summary>
+            工作模式：正常生产[0],CPK[1],空跑[2]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.Sta_Work">
+            <summary>
+            0：供料站；
+            1：人工站；
+            2：组装站；
+            3：保压站；
+            4：复检站；
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.BZ_CCD1_ImagePath">
+            <summary>
+            存放图片路径:"E:\BZ-Data\MMS\CCD_Image\当前日期\CCD1\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.MeshineSW">
+            <summary>
+            版本编号格式：0x.xx
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.ParAxis">
+            <summary>
+            各参数集合
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PVar.mPar.CheckSts">
+            <summary>
+            1:开启安全门；
+            2：开启手持条码枪；
+            3：设备镜像；
+            4：开启外部条码；
+            5：开启SF路径检测；
+            6：；
+            7：开启夹紧定位扫条码；
+            8:空跑开启截图；
+            17：开启演示功能；
+            18：开启一次补正功能；
+            19：开启Errorcode；
+            20：勾上开启PDCA；
+            21：开启HeatBt；
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:MMS.PageAlarm.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageAlarm.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageAlarm.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageChart.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageChart.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageChart.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageEngineering.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageEngineering.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageEngineering.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageLogin.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageLogin.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageLogin.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageMachineInfo.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageMachineInfo.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageMachineInfo.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageProduction.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageProduction.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageProduction.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageSetting.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageSetting.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageSetting.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.PageVision.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.PageVision.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.PageVision.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:MMS.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:MMS.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._add">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._alarmH">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._alarmL">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._back">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._bozhon">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._clear">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._deleteFile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._done">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._down">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._error">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._event">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._fail">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._focus">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._home">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampBlue20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampGray20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampGray201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampGreen20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampGreen201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampOrange20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampRed20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._lampRed201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._left">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._login">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._minus">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._newFile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._next">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._ok">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._org">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._right">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._rotate_antiClock">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._rotate_clock">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._setting">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._smile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._start">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._table">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._teach">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._up">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._userAdmin">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._userOp">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources._wait">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.alarm">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Alarm45x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Alarm50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ARW05LT">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Back">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.BZ">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.BZ_NewLog">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Camera">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Camera45x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Camera50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.chart">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.checkmark">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Clockwise">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Counterclockwise">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.cursor">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.cut">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Data">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Data48x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Data50x46">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.disk">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.disk_edit">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Down">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Download_48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Download_64">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Download_72">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ee">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Excel">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Excel50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Exit_32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Exit_48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Eye">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Eye50x29">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Forward">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.home">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Home49x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.hou">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Image1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ImagePath">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ImagePath50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.keyboard">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.LAMP_BLACK1_01">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Lamp_Green">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.LAMP_GREEN4_02">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.LAMP_RED3_02">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Laser1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Left">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.left_16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Left_24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Left_32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Left_48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Left_Big__">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.LightClose32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.lightOpen32X32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Live">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.logo128">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.logo16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.logo32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.logo48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.logo64">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.ni">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Open">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.OpenExcel">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.OpenImage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Par_50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Par_72">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.PAUSE_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Pause_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.PLAY_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.play_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.qian">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Redo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.refresh">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right_16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right_24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right_32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right_48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Right_Big">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.save">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.save_file">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.SaveAlarmLog">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.SaveAlarmLog50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.script">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.SeeImgC">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.setting">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Setting50x49">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.shang">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.start">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.STOP_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Stop_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.stop1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Sun16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Sun24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Sun48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Undo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.Up">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.user">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.User50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.vision">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.xia">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.xun">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.you">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.zuo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.上_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.下_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.右_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.左_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.未标题_3">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.正转">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.软件1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.软件11">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.软件2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.软件3">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:MMS.Properties.Resources.软件5">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="M:MMS.Calibration.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:MMS.TaskControlPanel.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.TaskControlPanel.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.TaskControlPanel.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:MMS.ShowResult.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:MMS.ShowResult.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:MMS.ShowResult.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:MMS.Task0_Machine">
+            <summary>
+            只有用来处理双手启动，类似于总循环
+            </summary>
+        </member>
+        <member name="M:MMS.GoHome.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:MMS.GoHome.GotoHome(System.Int16,System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            GotoHome(short CardNum[卡号], short Axis[轴号], double homeToLimitFDist[极限到原点距离], double searchHomeDist[原点搜索距离], double offsetPos[感应宽度], double homeoffset[原点偏移距离], double vel[搜索原点速度])
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="homeToLimitFDist"></param>
+            <param name="searchHomeDist"></param>
+            <param name="offsetPos"></param>
+            <param name="homeoffset"></param>
+            <param name="vel"></param>
+        </member>
+        <member name="F:MMS.Sta1Run.Frm_L1Adddata_tempBarcode">
+            <summary>
+            第一段数据界面增加数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:MMS.PDCA.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+    </members>
+</doc>

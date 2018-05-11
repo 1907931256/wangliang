@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XCore</RootNamespace>
+    <AssemblyName>XCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BZappdll, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BZappdll\bin\Debug\BZappdll.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\Xsetting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Framework\XFunc.cs" />
+    <Compile Include="Framework\XMLhelper.cs" />
+    <Compile Include="Framework\XTask.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\XListBox.Designer.cs">
+      <DependentUpon>XListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XsettingGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XsettingGrid.Designer.cs">
+      <DependentUpon>XsettingGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XtaskStateBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XtaskStateBar.Designer.cs">
+      <DependentUpon>XtaskStateBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XtaskStateRichList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XtaskStateRichList.Designer.cs">
+      <DependentUpon>XtaskStateRichList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\XAlarmEventArgs.cs" />
+    <Compile Include="Framework\XAlarmReporter.cs" />
+    <Compile Include="XGlobals.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XsettingGrid.resx">
+      <DependentUpon>XsettingGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XtaskStateBar.resx">
+      <DependentUpon>XtaskStateBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XtaskStateRichList.resx">
+      <DependentUpon>XtaskStateRichList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_alarmH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_alarmL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_bozhon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_deleteFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampBlue20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampGray20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampGray201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampGreen20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampGreen201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampOrange20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampRed20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_lampRed201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_newFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_org.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_rotate_antiClock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_rotate_clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_teach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_userAdmin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_userOp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_wait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm45x45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARW05LT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BZ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BZ-NewLog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera45x45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Counterclockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data48x45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Data50x46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye50x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home49x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagePath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagePath50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_Green.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAMP-BLACK1-01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp-Green.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAMP-GREEN4-02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LAMP-RED3-02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left 48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left_Big -.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightClose32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightOpen32X32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo64.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenExcel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Par_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Par_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAUSE_3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLAY_3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right 16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right 24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right 48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAlarmLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAlarmLog50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeeImgC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting50x49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STOP_3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软件1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软件2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软件3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软件5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\软件11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\上-1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未标题-3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下-1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\右-1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\正转.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左-1.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

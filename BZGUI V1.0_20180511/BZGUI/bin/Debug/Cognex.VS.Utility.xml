@@ -1,0 +1,1156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cognex.VS.Utility</name>
+    </assembly>
+    <members>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.#ctor(System.String)">
+            <summary>
+            Creates an object for reading and writing keys in an ini file. All reads and writes are cached and only written to disk 
+            on Dispose(), Close(), WriteOut(), or when the object is garbage collected.
+            </summary>
+            <param name="iniPath">Path to the iniFile to read. If it doesn't exist it will be created.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.ReadIn">
+            <summary>
+            Forces the INI parser to clear all the keys it has cached and read again from disk.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.WriteOut">
+            <summary>
+            Forces the INI parser to write its changes out to disk immediately
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.Close">
+            <summary>
+            Writes out all changes if needed and closes the ini file. Identical to Dispose.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.DeleteSection(System.String)">
+            <summary>
+            Delete an entire section from the INI file
+            </summary>
+            <param name="section">The section name to delete</param>
+            <returns>true if something was actually deleted, false if no section with the given name exists</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.CachedIniParser.DeleteEntry(System.String,System.String)">
+            <summary>
+            Delete an entry from the INI file
+            </summary>
+            <param name="section">The section name containing the entry to delete</param>
+            <param name="key">The key name of the entry</param>
+            <returns>true if an entry was actually deleted, false if no matching entry was found</returns>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.GridLines">
+            <summary>
+            LVS_EX_GRIDLINES
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.SubItemImages">
+            <summary>
+            LVS_EX_SUBITEMIMAGES
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.CheckBoxes">
+            <summary>
+            LVS_EX_CHECKBOXES
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.TrackSelect">
+            <summary>
+            LVS_EX_TRACKSELECT
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.HeaderDragDrop">
+            <summary>
+            LVS_EX_HEADERDRAGDROP
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.FullRowSelect">
+            <summary>
+            LVS_EX_FULLROWSELECT
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.OneClickActivate">
+            <summary>
+            LVS_EX_ONECLICKACTIVATE
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.TwoClickActivate">
+            <summary>
+            LVS_EX_TWOCLICKACTIVATE
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.FlatsB">
+            <summary>
+            LVS_EX_FLATSB
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.Regional">
+            <summary>
+            LVS_EX_REGIONAL
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.InfoTip">
+            <summary>
+            LVS_EX_INFOTIP
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.UnderlineHot">
+            <summary>
+            LVS_EX_UNDERLINEHOT
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.UnderlineCold">
+            <summary>
+            LVS_EX_UNDERLINECOLD
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.MultilWorkAreas">
+            <summary>
+            LVS_EX_MULTIWORKAREAS
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.LabelTip">
+            <summary>
+            LVS_EX_LABELTIP
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.BorderSelect">
+            <summary>
+            LVS_EX_BORDERSELECT
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.DoubleBuffer">
+            <summary>
+            LVS_EX_DOUBLEBUFFER
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.HideLabels">
+            <summary>
+            LVS_EX_HIDELABELS
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.SingleRow">
+            <summary>
+            LVS_EX_SINGLEROW
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.SnapToGrid">
+            <summary>
+            LVS_EX_SNAPTOGRID
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.ListViewExtendedStyles.SimpleSelect">
+            <summary>
+            LVS_EX_SIMPLESELECT
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.ListViewHelper">
+            <summary>
+            Contains helper methods to change extended styles on ListView, including enabling double buffering.
+            Based on Giovanni Montrone's article on <see cref="!:http://www.codeproject.com/KB/list/listviewxp.aspx"/>
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.CommandAndInfo.BreakdownTime">
+            <summary>
+            BreakdownTime is a CogStopwatch that measures how long each individual step in the RunJob operation took to complete.
+            It is for internal framework use only.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.CommandAndInfo.Product">
+            <summary>
+            Gets or sets the Product to be used when RunJob is called with this command. 
+            Setting the product after RunJob has been called or setting the product to a value 
+            that does not exists will throw an exception.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.ControlMessagesView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Cognex.VS.Utility.ControlMessagesView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.ControlMessagesView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LoginDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.LoginDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.LoginDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.FrameworkConfiguration">
+            <summary>
+            FrameworkConfiguration stores all of the framework's settings. It is also responsible for reading and writing to Configuration.ini
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.FrameworkConfiguration.gInit">
+            <summary>
+            Do not call, internal framework function. Initializes the FrameworkConfiguration singleton.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.FrameworkConfiguration.gShutDown">
+            <summary>
+            Do not call, internal framework function. Shuts down the FrameworkConfiguration singleton.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.FrameworkConfiguration.gOnly">
+            <summary>
+            Gets the FrameworkConfiguration singleton.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.AutoRun">
+            <summary>
+            Determines if the framework starts in online (true) or offline (false) mode.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.ShowCycleTimeOnDisplays">
+            <summary>
+            Show the amount of time it took to run an inspection job on yellow bar above the results display in the framework GUI.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.EnableProfinetSupport">
+            <summary>
+            Enable profinet support. Leave disabled unless needed.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.DevelopmentMode">
+            <summary>
+            Development Mode disables many safety checks, uses more RAM, and starts the framework logged in as an administrator. 
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.InitialWindowPositionX">
+            <summary>
+            The initial X position of the framework's main window.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.InitialWindowPositionY">
+            <summary>
+            The initial Y position of the framework's main window.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.WindowSizeX">
+            <summary>
+            The initial X size of the framework's main window.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.WindowSizeY">
+            <summary>
+            The initial Y size of the framework's main window.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.ImageSaveQueueSize">
+            <summary>
+            The image save queue size determines how many images are allowed in memory. 
+            For systems with slower disks, higher acquisition rates, or PNG image saving enabled, you may need to increas this number to 64.
+            Note that increasing this value can result in dramatically higher RAM usage.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.SerializerBufferSize">
+            <summary>
+            Determines the size of the serialization buffer on 32 bit systems. The serialization buffer should be set just larger than the size of the largest inspection toolblock.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.StartupLanguage">
+            <summary>
+            The default language on startup. Options are FrameworkLanguage.English and FrameworkLanguage.ChineseSimplified
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.MaximizeOnStartup">
+            <summary>
+            Determines if the Framework maximizes on startup
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.GarbageCollectionIntervalSeconds">
+            <summary>
+            Determines if the Framework maximizes on startup
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.FitDisplaysWithGraphics">
+            <summary>
+            Deterimines if the framework fits with or without graphics when displaying CogRecords on displays
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.AutoShowOnscreenKeyboard">
+            <summary>
+            Automatically show the onscreen keyboard. Default value is false because it can cause performance issues on certain systems.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.AllowAsyncOperation">
+            <summary>
+            Enable asynchronous operation. This setting completely changes the basics of machine communication. See the Universal Framework documentation for more details.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.DisableTicketBasedCommunication">
+            <summary>
+            Disable ticket-based communication. Forces-synchronous style communication (no TicketCreated message or Ticket IDs), even in asynchronous mode. Use with care.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.DisableLocalDisplay">
+            <summary>
+            Disables the displaying of results on the local displays. Speeds up operation when using remote displays.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.EnableRemoteDisplay">
+            <summary>
+            Disables the displaying of results on the remote displays. Speeds up operation when using not using remote displays.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.CompressRemoteDisplayImages">
+            <summary>
+            Disables the displaying of results on the remote displays. Speeds up operation when using not using remote displays.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.UseHardwareTriggersInSimulator">
+            <summary>
+            If true, pressing a simulator button that requires an image from a hardware triggered camera will wait for a software trigger. If false, software triggers are always used in the simulator.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.PrintCycleTimeBreakdown">
+            <summary>
+            Log a detailed breakdown of how much time is used on all of the steps processing a command.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.PrintHardwareTriggeringDebugMessages">
+            <summary>
+            Prints hardware triggering debug messages that may be useful when having trouble with hardware triggering setups. Defaults to false because this mode of operation can be extremely verbose.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.SaveDebugImages">
+            <summary>
+            Synchronously save a copy of all raw inspection images before running a tool. Assists in troubleshooting obscrure crash bugs triggered by images.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.UsePNGForRawImageSave">
+            <summary>
+            Causes the framework to save raw images in PNG format. This saves a lot of space but can take a considerable amount of time when saving (~15 seconds for a 5mp image). 
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.FrameworkConfiguration.UseTCPHeartBeat">
+            <summary>
+            If true, the Framework disconnects from any TCP port where it has not recieved any communication for 5 seconds.
+            To keep alive a TCP connection on a system with this option enabled, send a command every 5 seconds.
+            The command "heartbeat\r\n" is a convenient way to keep the connection alive as it does not generate any response or clutter the log file.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.FrameworkConfiguration.AnnotatedImageWidth">
+            <summary>
+            The width of the annotated jpg image saved
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.FrameworkConfiguration.AnnotatedImageHeight">
+            <summary>
+            The height of the annotated jpg image saved
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.IMachineSupport">
+            <summary>
+            IMachineSupport is an interface that must be implemented by all MachineSupport classes.
+            MachineSupport classes are used by the framework to adapt to different machine setups.
+            Machine support classes define the name of a machine, its communication protocol,
+            how to run inspection tools, and more.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.Init(Cognex.VS.Utility.IFrameworkSupport)">
+            <summary>
+            Init() is called once at framework startup, giving the machine 
+            assembly a chance to setup any internal variables it has and
+            initialize any special hardware it needs to run. It is important 
+            to save references to the IFrameworkSupport and FrameworkConfiguration 
+            objects provided.
+            </summary>
+            <param name="framework">An IFrameworkSupport object, used to issue 
+            commands to and query the state of the framework.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.Prepare">
+            <summary>
+            Shutdown() is called once when the framework is exiting. Clean up any 
+            open files and disconnect cleanly from any hardware in use.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.Shutdown">
+            <summary>
+            Prepare() is called when all framework object initialization is
+            completed.  Particular, acqFifo objects have created and initialized.
+            e.g: Machine assembly may use this method to prepare for ROI acquire.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.ForceRecordFlush">
+            <summary>
+            ForceRecordFlush() is called when the framework wants to let you know 
+            that you should manually save any partial inspection record data you 
+            might be logging using the InspectionRecordLogger.
+            If you do not use the InspectionRecordLogger, leave your implementation 
+            of this function blank.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.TCPJobParser(Cognex.VS.Utility.CommandAndInfo)">
+            <summary>
+            JobParser(...) is in charge of parsing and responding to commands sent 
+            to the framework. Typically you will want to parse the 
+            command to determine the parameters to send to 
+            IFrameworkSupport.RunJob(...), then formulate a response based on the 
+            state of output terminals in IFrameworkSupport.ToolBlocks
+            Some commands may follow other procedures, however, such as taking the 
+            system online, saving image results, or manually activating lights.
+            </summary>
+            <param name="command">The command to be processed. Find the text command at command.Command</param>
+            <returns>The response to send back to TCP client when finished.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.TCPAcqArmed(Cognex.VS.Utility.CommandAndInfo)">
+            <summary>
+            TCPAcqArmed(...) is called as soon as acquisition is ready to begin. The function is called by RunJob.
+            Return the string you would like sent to the TCP client. Return null and nothing will be sent.
+            </summary>
+            <param name="command">The command object with armed acq</param>
+            <returns>The string to send to the TCP client. Return null to do nothing.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.TCPAcqComplete(Cognex.VS.Utility.CommandAndInfo)">
+            <summary>
+            TCPAcqComplete(...) is called as soon as acquisition is complete. The function is called by RunJob.
+            Return the string you would like sent to the TCP client. Return null and nothing will be sent.
+            </summary>
+            <param name="command">The command object with completed acq</param>
+            <returns>The string to send to the TCP client. Return null to do nothing.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.ProfinetJobParser(Cognex.VS.Utility.CommandAndInfo)">
+            <summary>
+            This function is in charge of handling commands that come in over the Profinet interface.
+            </summary>
+            <param name="command">The command the spawned this Job</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IMachineSupport.GetAcquisitionSetupOverlayGraphics(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            GetAcquisitionSetupOverlayGraphics(...) is used to return the graphics to display
+            on the Live Video tab of the Acquisition Setup dialog, depending on the inspection ID,
+            input ID, camera ID and product ID.
+            </summary>
+            <param name="inspectionID">The ID (index) of the inspection</param>
+            <param name="inputID">The ID (index) of the input</param>
+            <param name="cameraID">The ID (index) of the camera</param>
+            <param name="productID">The ID (index) of the product</param>
+            <returns>The graphics to display on the Live Video tab of the Acquisition Setup dialog.</returns>
+        </member>
+        <member name="P:Cognex.VS.Utility.IMachineSupport.MachineName">
+            <summary>
+            The framework will call this property to get the name of the machine 
+            this IMachineSupport object supports.
+            Please make this unique to exactly one type of machine to avoid confusion.
+            We typically follow the format: {Manufacturer} {Machine Name} Rev. X
+            Eg: Cognex Vision System 1002b Rev. 2
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.IMachineSupport.SimulatorCommandStrings">
+            <summary>
+            Gives a list of all the simple commands you'd like to present as buttons
+            on the "Simulator" tab in the framework. Simple commands are static 
+            strings. This property may not be queried more than once by the 
+            framework and will therefore not update if the output changes.
+            The following properties must give collections of the exact same size: 
+            SimulatorCommandStrings, SimulatorCommandParserIDs
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.IMachineSupport.SimulatorPLCCommands">
+            <summary>
+            Gives a list of all the PLC commands you'd like to present as buttons
+            on the "Simulator" tab in the framework. Simple commands are single 16 bit numbers. 
+            This property may not be queried more than once by the 
+            framework and will therefore not update if the output changes.
+            The following properties must give collections of the exact same size: 
+            SimulatorCommandStrings, SimulatorCommandParserIDs
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.IMachineSupport.SimulatorCommandParserIDs">
+            <summary>
+            Gives a list of all the command parser IDs for the simple simulator 
+            commands. These will determine which TCP server the commands appear to 
+            come from when sent by the simulator. This property may not be queried 
+            more than once by the framework and will therefore not update if the 
+            output changes. 
+            The following properties must give collections of the 
+            exact same size: SimulatorCommandStrings, SimulatorCommandParserIDs
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.CalibrationMode">
+            <summary>
+            An enum to describe a calibration toolblock as automatic or manual.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.CalibrationMode.Automatic">
+            <summary>
+            Automatic calibration are setup and managed by the framework's autocal service
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.CalibrationMode.Manual">
+            <summary>
+            Manual calibrations are toolblocks created manually by the vision engeneer
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.CalibrationMode.Invalid">
+            <summary>
+            Invalid calibrations are calibrations that did not load or do not exist
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.LightControlAction">
+            <summary>
+            LightControlAction defines the behavior of the Framework's light controller 
+            support when acquiring images.It is a Flag-type enum, so combining values 
+            with a bitwise OR is allowed. Some commonly used combinations are provided
+            for convenience.
+            
+            Eg (C#): AutoOn | AutoOff == AutoOnAndOff
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.NoAction">
+            <summary>
+            Take no action turning lights on or off.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.AutoOn">
+            <summary>
+            Turn lights on automatically before acquisition, using the framework's light intensity settings
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.AutoOff">
+            <summary>
+            Turn lights off automatically after acquisition
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.AutoOnAndOff">
+            <summary>
+            Turn lights on, acquire images, then off. Equivalent to ( AutoOn | AutoOff )
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.UseCalibrationValues">
+            <summary>
+            When turning lights on or off, use the lighting values set up for calibration-time
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.LightControlAction.AutoOnAndOffCalibration">
+            <summary>
+            Equivalent to ( AutoOn | AutoOff | UseCalibrationValues )
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.ManualGradingStatus">
+            <summary>
+            When manual grading is enabled, these constants reflect the user's grading choice
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.RunJobParameters">
+            <summary>
+            RunJobParameters manages all of the data needed to run an inspection job. It contains all toolblock inputs and outputs, including images. In general, there are properties that you set before calling RunJob(...) and properties you read after.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.AnnotatedResultBitmaps">
+            <summary>
+            A list of the toolblock's last run records, rendered to JPGs. Only results that would be sent to displays are rendered. You may read this after calling RunJob.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.InspectionID">
+            <summary>
+            The 0-indexed InspectionID of the tool to run. You may set this before calling RunJob.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.ColorMapXML">
+            <summary>
+            Is set, any saved annotated images will use this color map
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.SuppressLastRunRecordGeneration">
+            <summary>
+            When SuppressLastRunRecordGeneration is set true, tools that are run do not create a last run record, 
+            do not post results to displays, and do not save annotated images. Raw images are still saved.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.InspectionInputCount">
+            <summary>
+            The number of inputs for the specified inspection.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.PartID">
+            <summary>
+            The UInt64 part ID, used for grouping the images from multiple tool runs into a single folder. 0 means no part ID was specified.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.RobotPose">
+            <summary>
+            The pose of the robot when this tool was run. Used for moving camera calibrations.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters._timestamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.InspectionRanSuccessfully">
+            <summary>
+            Indicates if the inspection toolblock ran successfully.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.CalibrationRanSuccessfully">
+            <summary>
+            Indicates if the calibration toolblock(s) ran successfully.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.CalibrationSetupSuccessfully">
+            <summary>
+            Indicates if the calibration toolblocks were all valid and capable of accepting the incoming images.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.LoadedImages">
+            <summary>
+            Images in the collection were loaded from disk using the simulator.
+            Images loaded from disk are never saved to disk as raw images.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.AcquiredImages">
+            <summary>
+            Images in this collection were acquired by camera or attached using the AddAcquiredImage(...) method.
+            Acquired images are saved to disk is raw image saving is enabled.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.ImagesForCalibration">
+            <summary>
+            Images in this collection are destined for the calibration toolblocks needed by this inspection. Both loaded and acquired images end up here.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.ImagesForInspection">
+            <summary>
+            Images in this collection are calibrated and fed into the inspection toolblock on the InputImage and InputImageX terminals.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.ImagesForInspectionCheckerboard">
+            <summary>
+            Images in this collection are sent to the inspection toolblock on the InputImageHome2D and InputImageXHome2D input terminals.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.Inputs">
+            <summary>
+            Inputs is a dictionary that allows you to set input ternimals on the inspection toolblock.
+            Add a key-value pair to set an input terminal in the inspection toolblock before it runs. 
+            If an input terminal exists with the same name as the key, the terminal value will be assigned.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.OutputsToSet">
+            <summary>
+            OutputsToSet is a dictionary that allows you to set output ternimals on the inspection toolblock.
+            Add a key-value pair to set an output terminal in the inspection toolblock before it runs. 
+            If an out terminal exists with the same name as the key, the terminal value will be assigned.
+            
+            Use this dictionary to clear outputs or set default values.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.Outputs">
+            <summary>
+            Outputs is a dictionary that allows you to retrieve the values of output terminals from the inspection toolblock.
+            After the inspection runs, all output terminal names and values are copied into this dictionary as Key-Value pairs.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.CalibrationInputs">
+            <summary>
+            CalibrationInputs is a dictionary that allows you to set input ternimals on the calibration 
+            toolblocks that are run in service of this inspection.
+            Add a key-value pair to set an input terminal in the inspection toolblock before it runs. 
+            If an input terminal exists with the same name as the key, the terminal value will be assigned.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.RunStatus">
+            <summary>
+            RunStatus contains a copy of the inspection toolblock's RunStatus after it has run.
+            </summary>
+        </member>
+        <member name="F:Cognex.VS.Utility.RunJobParameters.LastRunRecord">
+            <summary>
+            LastRunRecord contains a copy of the inspection toolblock's LastRunRecord after it has run.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.RunJobParameters.ExecutionTime">
+            <summary>
+            ExecutionTime is a CogStopwatch that measures how long the RunJob operation took to complete.
+            This time includes acquisition, calibration, and inspection.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.#ctor(System.Int32,System.UInt64,Cognex.VS.Utility.RobotPose)">
+            <summary>
+            Construct a new RunJobParameters object that runs a single inspection toolblock and displays results on a collection of displays.
+            </summary>
+            <param name="displayIDs">A collection of 0-indexed display IDs where the result records will be displayed.</param>
+            <param name="inspectionID">The 0-indexed inspection toolblock ID to be run</param>
+            <param name="partID">A partID, generated with ImageSaveQueue.gOnly.NewPart(...). A value of 0 indicates no known part.</param>
+            <param name="robotPose">The pose of the robot at the time the job is being run. Needed only for inspection tools fed by moving camera calibrations.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.#ctor">
+            <summary>
+            A constructor for a RunJobParameters object that runs no specific tool and posts no results. Used internally for calibration.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.WaitForResultReady">
+            <summary>
+            Used internally by the framework. Do not call this function.
+            
+            The calling thread waits until the NotifyResultReady() function has been called at least once
+            </summary>
+            <returns>Always true</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.WaitForResultReady(System.Int32)">
+            <summary>
+            Used internally by the framework. Do not call this function.
+            
+            The calling thread waits up to the specified number of ms until the NotifyResultReady() function has been called at least once
+            </summary>
+            <param name="timeout">The amount of time to wait, in ms</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.NotifyResultReady">
+            <summary>
+            Used internally by the framework. Do not call this function.
+            
+            Signals to any threads that have called WaitForResultReady() that they may continue execution.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.SetInputUnlessAlreadySet(System.String,System.Object)">
+            <summary>
+            Sets a named toolblock input terminal to a given value before inspection, assuming no value was already assigned
+            </summary>
+            <param name="key">The name of the toolblock terminal</param>
+            <param name="value">The value to set on the toolblock terminal</param>
+            <returns>true if the value was set by this function, false if it was already set</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.SetOutputUnlessAlreadySet(System.String,System.Object)">
+            <summary>
+            Sets a named toolblock output terminal to a given value before inspection, assuming no value was already assigned.
+            </summary>
+            <param name="key">The name of the toolblock terminal</param>
+            <param name="value">The value to set on the toolblock terminal</param>
+            <returns>true if the value was set by this function, false if it was already set</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.GetAnnotatedImageSaveFileName(System.Int32)">
+            <summary>
+            Gets the full path to where the framework would save an annotated image file. Includes the image file name but no image file extension.
+            The image save queue is allowed to determine the appropriate image extension.
+            </summary>
+            <param name="inputID">The result record ID of the image.</param>
+            <returns>The full path to an annotated image file, minus file extension.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.GetRawImageSaveFileName(System.Int32)">
+            <summary>
+            Gets the full path to where the framework would save a raw image file. Includes the image file name but no image file extension.
+            The image save queue is allowed to determine the appropriate image extension.
+            </summary>
+            <param name="inputID">The result record ID of the image.</param>
+            <returns>The full path to a raw image file, minus file extension.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.GetAnnotatedImageSaveFileName(System.Int32,System.DateTime,System.Boolean)">
+            <summary>
+            Gets the full path to where the framework would save an annotated image file. Includes the image file name but no image file extension.
+            The image save queue is allowed to determine the appropriate image extension.
+            </summary>
+            <param name="inputID">The result record ID of the image.</param>
+            <param name="filenameTime">Override the timestamp of the file name.</param>
+            <returns>The full path to an annotated image file, minus file extension.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.RunJobParameters.GetRawImageSaveFileName(System.Int32,System.DateTime,System.Boolean)">
+            <summary>
+            Gets the full path to where the framework would save a raw image file. Includes the image file name but no image file extension.
+            The image save queue is allowed to determine the appropriate image extension.
+            </summary>
+            <param name="inputID">The result record ID of the image.</param>
+            <param name="filenameTimePrefix">Override the timestamp of the file name. Generated internally as DateTime.Now.ToString("yyyyMMdd")</param>
+            <returns>The full path to a raw image file, minus file extension.</returns>
+        </member>
+        <member name="T:Cognex.VS.Utility.InjectedCommandResultDelegate">
+            <summary>
+            A delegate for defining event handlers for the InjectedCommandResultReady event.
+            </summary>
+            <param name="command">Command object that was originally injected</param>
+            <param name="result">Result string from running the command</param>
+        </member>
+        <member name="T:Cognex.VS.Utility.IFrameworkSupport">
+            <summary>
+            An interface implemented by the main framework software, offering a variety of functionality for intereacting with the GUI, hardware, and interfaces.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.GoOnline">
+            <summary>
+            Put the system in AutoRun or "Online" mode. The system should refuse 
+            most TCP commands when it is not in Online mode.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.GoOffline">
+            <summary>
+            Put the system in Debug or "Offline" mode. The framework unlocks many 
+            GUI features in offline mode, mostly configuration settings.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.LightOn(System.Int32,System.Int32)">
+            <summary>
+            Manually turn on a light
+            </summary>
+            <param name="controllerID">A zero-based index, specifying which light 
+            controller to address.</param>
+            <param name="lightID">A zero-based index, specifiying which channel on 
+            the controller to activate.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.LightOff(System.Int32,System.Int32)">
+            <summary>
+            Manually turn off a light
+            </summary>
+            <param name="controllerID">A zero-based index, specifying which light 
+            controller to address.</param>
+            <param name="lightID">A zero-based index, specifiying which channel 
+            on the controller to deactivate.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.LightAuto(System.Int32,Cognex.VS.Utility.LightControlAction)">
+            <summary>
+            Automatically turn on or off lights associated with a specific job ID. 
+            AcquireImageFromCamera and RunJob automatically call this function 
+            before and after acquisition.
+            </summary>
+            <param name="JobIndex">The job ID used to determine the lights activated
+            and their intensity values.</param>
+            <param name="action">The action taken by the LightAuto command. AutoOn
+            is the action taken before acquisition, AutoOff is the action taken 
+            after.
+            
+            To use the Calibration-time light settings, perform a bitwise OR operation 
+            with LightControlAction.UseCalibrationValues.
+            
+            Eg (C#): (LightControlAction.UseCalibrationValues | LightControlAction.AutoOn)
+            Eg (VB): (LightControlAction.UseCalibrationValues Or LightControlAction.AutoOn)</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.SetLightIntensity(System.Int32,System.Int32,System.Double)">
+            <summary>
+            Sets the light intensity of a controller and channel.
+            </summary>
+            <param name="controllerID">A zero-based index, specifying which light 
+            controller to address.</param>
+            <param name="lightID">A zero-based index, specifiying which channel on 
+            the controller to set.</param>
+            <param name="intensity">The intensity to set, 0-255</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.SaveImageWithGraphics(System.Int32,System.String)">
+            <summary>
+            Save the image record off of a given display into a jpg file.
+            </summary>
+            <param name="displayID">The display with the record to be captured in the image</param>
+            <param name="filePath">The path of the saved image</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.GetLightControllerChannelCount(System.Int32)">
+            <summary>
+            Gets the number of channels beloning to a specific light controller. Returns zero for undefined or non-loaded light controllers.
+            </summary>
+            <param name="controllerID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.ChangeProduct(System.Int32)">
+            <summary>
+            Changes the default "Product" in the framework. This alters the settings used 
+            for exposure time on all AcqFifos, intensity and activation of lights, 
+            and in some cases the tools used for inspection. Changing the product 
+            does not alter calibration toolblocks or any settings other than 
+            exposure in AcqFifo tools. Changing a product does not change the product 
+            of any already-received commands. To change the Product of an already
+            constructed command, use the CommandAndInfo.Product property.
+            </summary>
+            <param name="newProductID">The zero-based index of the new product.</param>
+            <returns>True if the product changed successfully, false if it did not.</returns>
+        </member>
+        <member name="P:Cognex.VS.Utility.IFrameworkSupport.Inspections">
+            <summary>
+            Gets a collection of the current Inspection ToolBlocks for all Job IDs. 
+            Be sure not to store these collections, as they are invalidated by calls
+            to ChangeProduct(...) and various other framework functions.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.IFrameworkSupport.Calibrations">
+            <summary>
+            Gets a collection of the current Calibration ToolBlocks for all Job IDs. 
+            Be sure not to store these collections, as they are invalidated by 
+            various framework functions.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.IFrameworkSupport.Cameras">
+            <summary>
+            Gets a collection of the current AcqFifo tools for all Job IDs. 
+            Be sure not to store these collections, as they are invalidated by 
+            various framework functions.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.RunJob(Cognex.VS.Utility.CommandAndInfo,Cognex.VS.Utility.LightControlAction,System.Boolean,Cognex.VS.Utility.RunJobParameters[])">
+            <summary>
+            RunJob(...) acquires a set of images, runs them through calibrations,
+            runs the calibrated images through one or more inspection tools. 
+            The results are sent to CogDisplays in the framework. The various 
+            parameters of the function determine the exact behavior of each step 
+            in the process.
+            </summary>
+            <param name="command">The command object that generated your need to run these inspection jobs. It determines automatic image saving behavior and where results are sent.</param>
+            <param name="lightControlAction">Specify the light controller bahavior you want</param>
+            <param name="shareLightingSettings">This parameter has been depreciated. RunJob will always behave as if this were set to true and share lighting settings between all inspections.</param>
+            <param name="parameters">The parameters for each inspection to run. Specifies which toolblock IDs to use, which displays to put the results on, and more.
+            See the constructor for RunJobParameters for more details.</param>
+            <returns>A boolean that is true is all inspections ran without error and false otherwise.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.ApplyCustomCameraFeatures(System.Int32)">
+            <summary>
+            Manually reapplies any custom camera features defined in the Configuration.ini file. This should not be necessary in normal operation.
+            </summary>
+            <param name="cameraID">The 0-indexed ID of the camera you would like to reapply any custom features to</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.AddToolStripMenuItem(System.Windows.Forms.ToolStripMenuItem)">
+            <summary>
+            Adds a ToolStripMenuItem to the framework GUI. Typically this function 
+            is called from IMachineSupport.Init(...) 
+            
+            This function allows machine assemblies to bring up forms to customize 
+            inspection behavior, support custom hardware, and more.
+            </summary>
+            <param name="item">The ToolStripMenuItem to be added to the Framework's main menu bar.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.AddToolStripMenuItem(System.Windows.Forms.ToolStripMenuItem,Cognex.VS.Utility.PermissionLevel)">
+            <summary>
+            Adds a ToolStripMenuItem to the framework GUI. Typically this function 
+            is called from IMachineSupport.Init(...) 
+            
+            This function allows machine assemblies to bring up forms to customize 
+            inspection behavior, support custom hardware, and more.
+            </summary>
+            <param name="tsmi">The ToolStripMenuItem to be added to the Framework's main menu bar.</param>
+            <param name="permissionLevel">The permission level required to access this item (User, Engineer, or Administrator)</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.RemoveToolStripMenuItem(System.Windows.Forms.ToolStripMenuItem)">
+            <summary>
+            Removes a ToolStripMenuItem added by AddToolStripMenuItem(...)
+            </summary>
+            <param name="item">The ToolStripMenuItem to be removed.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.SaveInspection(System.Int32)">
+            <summary>
+            Manually trigger the framework to persist an inspection toolblock.
+            Note that this operation may take several seconds.
+            </summary>
+            <param name="JobIndex">A zero-based index indicating which Job ID's 
+            inspection toolblock to persist</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.SaveCalibration(System.Int32)">
+            <summary>
+            Manually trigger the framework to persist a calibration toolblock. 
+            Note that this operation may take several seconds.
+            </summary>
+            <param name="JobIndex">A zero-based index indicating which Job ID's 
+            calibration toolblock to persist</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.RepositionMainWindow(System.Drawing.Point)">
+            <summary>
+            Repositions the main framework GUI window to a new location. If the 
+            window is Maximized, it is restored, repositioned, then maximized again.
+            
+            If it is minimized, it is restored, then repositioned.
+            </summary>
+            <param name="newPosition"></param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.MaximizeMainWindow">
+            <summary>
+            Maximize the main window
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.MinimizeMainWindow">
+            <summary>
+            Minimize the main windows
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.BringToFrontMainWindow">
+            <summary>
+            Bring the main windows to the front, even if other apps are active. 
+            If minimized, restore.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.RestoreMainWindow">
+            <summary>
+            If Maximized, set window mode normal. If minimized, set window mode back 
+            to maximized or normal, whichever it was before it was minimized.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.AddCogGraphicToDisplay(System.Int32,Cognex.VisionPro.ICogGraphic)">
+            <summary>
+            Add an ICogGraphic object to the specified display
+            </summary>
+            <param name="displayID">The 0-index of the display to which the graphic will be added</param>
+            <param name="graphic">The ICogGraphic object to be added to the display</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.AddInteractiveCogGraphicToDisplay(System.Int32,Cognex.VisionPro.ICogGraphicInteractive)">
+            <summary>
+            Add an ICogGraphic object to the specified display
+            </summary>
+            <param name="displayID">The 0-index of the display to which the graphic will be added</param>
+            <param name="graphic">The ICogGraphic object to be added to the display</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.AddCogGraphicsToDisplay(System.Int32,Cognex.VisionPro.CogGraphicCollection)">
+            <summary>
+            Add a collection of ICogGraphic objects to the specified display
+            </summary>
+            <param name="displayID">The 0-index of the display to which the graphic will be added</param>
+            <param name="graphics">The collection of ICogGraphic objects to be added to the display</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.PostRecordToDisplay(Cognex.VS.Utility.CommandAndInfo,System.Int32,Cognex.VisionPro.ICogRecord,System.Double)">
+            <summary>
+            Manually post an ICogRecord to a display. Useful for when result records need to be post-processed in the machine assembly.
+            </summary>
+            <param name="command">The command that triggered this record to be posted</param>
+            <param name="displayID">THe target display</param>
+            <param name="record">The record to be shown</param>
+            <param name="executionTime">(Optional) The execution time in milliseconds to update the display with.</param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.ShowMosaicResult(Cognex.VS.Utility.CommandAndInfo,System.Int32,System.Int32,System.Boolean,Cognex.VS.Utility.RunJobParameters[])">
+            <summary>
+            Create, save, and display a mosaic on multiple result annotated result images. Each tile is limited to 800x600 in size.
+            </summary>
+            <param name="command">Command object for this operation</param>
+            <param name="displayID">The target display where the mosaic will be shown (specify -1 to not display)</param>
+            <param name="imagesPerRow">Images per row in the mosaic</param>
+            <param name="saveMosaicImage">True if you want to automatically save the mosaic to the folder with all other annotated images</param>
+            <param name="runJobParams">All the RunJobParameters objects where you would like to pull results from</param>
+            <returns>A Windows drawing bitmap of the mosaic. Can be saved using ImageSaveQueue if desired.</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.InjectCommand(System.String,System.Object)">
+            <summary>
+            This method allows the machine assembly to inject commands into the framework. These commands will then appear as calls to TCPJobParser. This call is
+            asynchronous and returns right away. Optionally, a user data object may be provided for reference. A reference to this object will appear in the CommandAndInfo
+            argument passed to TCPJobParser in the property command.UserData
+            
+            You may inject calibration commands. (eg.: "SC,1,1,2,11,3,1"). Injected calibration commands are handled by the framework and will not result in a call to TCPJobParser.
+            </summary>
+            <param name="command">The command as a string.</param>
+            <param name="userData">A reference object carried with the command</param>
+        </member>
+        <member name="E:Cognex.VS.Utility.IFrameworkSupport.InjectedCommandResultReady">
+            <summary>
+            An event that fires when previously injected commands have finished processing. This includes injected calibration commands.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.CalculateRobotDestinationPose(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Calculates the destination robot pose given the current probot pose, current part pose, and destination part pose.
+            </summary>
+            <param name="currentRobotPoseX"></param>
+            <param name="currentRobotPoseY"></param>
+            <param name="currentRobotPoseAngleInDegrees"></param>
+            <param name="currentPartPoseX"></param>
+            <param name="currentPartPoseY"></param>
+            <param name="currentPartPoseAngleInDegrees"></param>
+            <param name="destinationPartPoseX"></param>
+            <param name="destinationPartPoseY"></param>
+            <param name="destinationPartAngleInDegrees"></param>
+            <param name="destinationRobotPoseX"></param>
+            <param name="destinationRobotPoseY"></param>
+            <param name="destinationRobotPoseAngleInDegrees"></param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.CalculateRobotDestinationPose(Cognex.VisionPro.CogTransform2DLinear,Cognex.VisionPro.CogTransform2DLinear,Cognex.VisionPro.CogTransform2DLinear)">
+            <summary>
+            Calculates the destination robot pose given the current probot pose, current part pose, and destination part pose.
+            </summary>
+            <param name="currentRobotPose"></param>
+            <param name="currentPartPose"></param>
+            <param name="destinationPartPose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.CalculateRobotDestinationPose(Cognex.VisionPro.CogTransform2DLinear,Cognex.VisionPro.CogTransform2DLinear,Cognex.VisionPro.CogTransform2DLinear,Cognex.VisionPro.CogTransform2DLinear@)">
+            <summary>
+            Calculates the destination robot pose given the current probot pose, current part pose, and destination part pose.
+            </summary>
+            <param name="currentRobotPose"></param>
+            <param name="currentPartPose"></param>
+            <param name="destinationPartPose"></param>
+            <param name="destinationRobotPose"></param>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.CameraIsConnected(System.Int32)">
+            <summary>
+            Checks if a camera is connected by acquiring an image from it
+            </summary>
+            <param name="camID">The camera id of the camera to be tested</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.IFrameworkSupport.LightControllerIsConnected(System.Int32)">
+            <summary>
+            Checks if a light controller is connected by accessing its IsConnected property.
+            </summary>
+            <param name="controllerID"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cognex.VS.Utility.ImageSaveQueue.ImageAndPath.TargetSavePath">
+            <summary>
+            Gets the path where the image will be or has already been saved, as of right now.
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.ImageSaveQueue.GetPartImageSavePaths(System.UInt64)">
+            <summary>
+            Gets a collection of all the current image save paths that belong to a given part. 
+            If the part does not exist or contains no image records, the list will be empty.
+            Be sure to call this AFTER using a function like SetPartName to ensure that you get the correct image destinations.
+            </summary>
+            <param name="partID">The part's unique ID</param>
+            <returns>Collection of image paths</returns>
+        </member>
+        <member name="M:Cognex.VS.Utility.ImageSaveQueue.GetPartImageSavePaths(System.String)">
+            <summary>
+            Gets a collection of all the current image save paths that belong to a given part. 
+            If the part does not exist or contains no image records, the list will be empty.
+            Be sure to call this AFTER using a function like SetPartName to ensure that you get the correct image destinations.
+            </summary>
+            <param name="partName">The part's unique name</param>
+            <returns>Collection of image paths</returns>
+        </member>
+        <member name="T:Cognex.VS.Utility.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Cognex.VS.Utility.Properties.Resources.virtualkeyboard">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Cognex.VS.Utility.Win32API">
+            <summary>
+            Class with all static members, exposing various Win32 API features to .NET
+            </summary>
+        </member>
+        <member name="M:Cognex.VS.Utility.Win32API.Activate">
+            <summary>
+            Activate the main window of the current process and steal focus over all other processes
+            </summary>
+        </member>
+    </members>
+</doc>

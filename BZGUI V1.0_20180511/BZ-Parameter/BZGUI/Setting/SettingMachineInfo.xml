@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Setting>
+  <什么机器>0</什么机器>
+  <AEID>OQC</AEID>
+  <AESUB_ID>IT-CG</AESUB_ID>
+  <BU>Foxconn</BU>
+  <Floor>C04-4F</Floor>
+  <HardwareREV>BZ001</HardwareREV>
+  <Line>Post</Line>
+  <MachineSN>BZ001</MachineSN>
+  <ProductType>D21</ProductType>
+  <Project>Mcloren</Project>
+  <Vendor>BZ</Vendor>
+  <MachineID>001</MachineID>
+</Setting>

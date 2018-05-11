@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Setting>
+  <ErrorCode是否上传>False</ErrorCode是否上传>
+  <PDCA是否上传>False</PDCA是否上传>
+  <TimeMode>False</TimeMode>
+  <打开SSH通信>False</打开SSH通信>
+  <打开安全门>False</打开安全门>
+  <启用CPK模式>False</启用CPK模式>
+  <IsEmptyRun>True</IsEmptyRun>
+</Setting>

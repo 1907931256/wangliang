@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Setting>
+  <扫描抢_IP>192.168.1.1</扫描抢_IP>
+  <SSSH密码>gdlocal</SSSH密码>
+  <SSH用户名>gdlocal</SSH用户名>
+  <SSH远程IP地址>192.168.1.20</SSH远程IP地址>
+  <测试超时>10</测试超时>
+  <学习条码长度>AD581070042HP0MA8</学习条码长度>
+  <SSH脚本名字>RunningMotorLEFT.txt</SSH脚本名字>
+</Setting>

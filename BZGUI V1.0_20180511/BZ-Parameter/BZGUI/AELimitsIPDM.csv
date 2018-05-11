@@ -1,0 +1,5 @@
+IPDM,IPD_Left,IPD_Right,Operator_ID,Mode,TestSeriesID,Priority,SW Version
+Upper Limit,0.2,0.525,NA,NA,NA,NA,NA
+Nominal,NA,0.5,NA,NA,NA,NA,NA
+Lower Limit,-0.1,0.475,NA,NA,NA,NA,NA
+Unit,mm,mm,,,,,

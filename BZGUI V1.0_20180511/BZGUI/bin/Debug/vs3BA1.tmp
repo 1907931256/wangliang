@@ -1,0 +1,2621 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BZTest</name>
+    </assembly>
+    <members>
+        <member name="F:BZGUI.Bool.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.Bool.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.Bool.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.AlarmChart.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.AlarmChart.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.AlarmChart.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.Chart30Day.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.Chart30Day.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.Chart30Day.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.ChartUPH30Day.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ChartUPH30Day.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.ChartUPH30Day.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.ChartCPK.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ChartCPK.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.ChartCPK.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ChartYield.CreateChartArea(System.Int32,System.String,System.Boolean)">
+            <summary>
+            This method will create a ChartArea with a given name at a certain level
+            </summary>
+        </member>
+        <member name="F:BZGUI.ChartYield.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ChartYield.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.ChartYield.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.CheckDatactl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.CheckDatactl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.CheckDatactl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.InfoList.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.InfoList.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.InfoList.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.mFunction.NSetDO(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            参数：[0板卡，1扩展模块]，[板卡号0-2]，[模块号0-3]，[输出端口号0-15]
+            </summary>
+            <param name="CardType"></param>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.mFunction.mPostion.TeachAxis1">
+            <summary>
+            Teach控件1轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.mFunction.mPostion.TeachAxis2">
+            <summary>
+            Teach控件2轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.mFunction.mPostion.TeachAxis3">
+            <summary>
+            Teach控件3轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.mFunction.mPostion.TeachAxis4">
+            <summary>
+            Teach控件4轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.Card1OfAxis">
+            <summary>
+            第一张板卡的轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.Card2OfAxis">
+            <summary>
+            第二张板卡轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.IniFileName">
+            <summary>
+            My.Application.Info.DirectoryPath + "\Setting.dll"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.AxisTmplPos">
+            <summary>
+            记录轴目标的位置（脉冲）AxisTmplPos(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.LeadLength">
+            <summary>
+            丝杆导成
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.GeerRate">
+            <summary>
+            减速比
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.PlusPerR">
+            <summary>
+            每圈的脉冲数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Tools.AxisSpeed">
+            <summary>
+            轴的速度mm/s
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.NetMonitor.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.NetMonitor.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.NetMonitor.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.btn_Curretn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Read current
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.btn_Save_Current_Click(System.Object,System.EventArgs)">
+            <summary>
+            save current
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.LoadHeightPane">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.LoadPaneQ">
+            <summary>
+            两面角的变化
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.LoadPaneAQ">
+            <summary>
+            两面角度差的变化
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.LoadPaneCurrent">
+            <summary>
+            电流
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmMMS_Calculate.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmMMS_Calculate.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BZGUI.MMS_algorithm.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BZGUI.MMS_algorithm.Calculating_Coefficient(System.Double,System.Double,System.Double)">
+            <summary>
+            三点求面方式
+            </summary>
+            <param name="z1"></param>
+            <param name="z2"></param>
+            <param name="z3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.MMS_algorithm.Calculating_dihedral(BZGUI.Suface_Equation,BZGUI.Suface_Equation)">
+            <summary>
+            已知两个面，求两面角
+            </summary>
+            <param name="Coeff1"></param>
+            <param name="Coeff2"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BZGUI.FrmCCD.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmCCD.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmCCD.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmLaser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmLaser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmLaser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmIPDMManual.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmIPDMManual.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmIPDMManual.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmMMSManual.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMMSManual.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmMMSManual.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BZGUI.ProduceData.#ctor">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="M:BZGUI.UPH.UPHupdate">
+            <summary>
+            update UPH:   UPHDay[i]++,i is the dayHour
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.UPH.UPHcurrentHour">
+            <summary>
+            当前小时的UPH
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.CurrentYield.ResetCurrent(System.Boolean,System.Boolean)">
+            <summary>
+            重置良率
+            </summary>
+            <param name="ResetToday">重置当天良率</param>
+            <param name="ResetMonth">重置历史良率</param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.CurrentYield.AddOneResult(System.Boolean)">
+            <summary>
+            生产一个后将PASS or FAIL 结果传进来，更新统计计数
+            </summary>
+            <param name="PASS">PASS为true  FAIL为false</param>
+        </member>
+        <member name="M:BZGUI.CurrentYield.GetCurrentProduceNum">
+            <summary>
+            rtn the ProduceNum,0is OK,1 is total
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BZGUI.LaserHights.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.LaserHights.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.LaserHights.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PCI9222ctl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PCI9222ctl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PCI9222ctl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PCI9222.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.PCI9222.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.PCI9222.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BZGUI.DAQ">
+            <summary>
+            实时采集laser Analog signal
+            </summary>
+        </member>
+        <member name="M:BZGUI.DAQ.PCI9222StartCollect">
+            <summary>
+            开始收集
+            </summary>
+        </member>
+        <member name="M:BZGUI.DAQ.PCI9222StopCollect">
+            <summary>
+            停止收集
+            </summary>
+        </member>
+        <member name="M:BZGUI.DAQ.PCI9222Clear">
+            <summary>
+            清除
+            </summary>
+        </member>
+        <member name="F:BZGUI.Datagridshow.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.Datagridshow.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.Datagridshow.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:BZGUI.EnumShowResult">
+            <summary>
+            show Result Event
+            </summary>
+        </member>
+        <member name="M:BZGUI.Frm_Engineering.Frm_Engineering_VisibleChanged(System.Object,System.EventArgs)">
+            <summary>
+            界面isShowAxisPara显示否
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BZGUI.Frm_Engineering.MacStop">
+            <summary>
+            机器停止
+            </summary>
+        </member>
+        <member name="M:BZGUI.Frm_Engineering.FresshMachinePar">
+            <summary>
+            把1维参数转换成2维的机械参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Frm_Engineering.LoadParAxis">
+            <summary>
+            加载工程界面各轴参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Frm_Engineering.DrawSpline(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Double},System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary> 
+            绘制曲线函数
+            </summary>
+            <param name="listX">X值集合</param>
+            <param name="listY">Y值集合</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="M:BZGUI.Frm_Par.CheeckPar">
+            <summary>
+            检测参数是否在范围内
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Frm_Production.ExchangeCpkData">
+            <summary>
+            数据交换
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Frm_Production.CalculateYield">
+            <summary>
+            更新生产数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Frm_Production.ShowCurByClick(System.Int32,System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary>
+            鼠标点击，通过环号显示游标，并缩放到响应位置函数
+            </summary>
+            <param name="ringNum">环号</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="T:BZGUI.Frm_Production.nCPK">
+            ******CPK结构体********
+        </member>
+        <member name="F:BZGUI.Frm_Parameter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.Frm_Parameter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.Frm_Parameter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.Frm_Laser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.Frm_Laser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.Frm_Laser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.Globals.BZ_ParameterPath">
+            <summary>
+            当前设备重要程序重要参数:"D:\BZ-Parameter\MMS\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Globals.Invoker">
+            <summary>
+            控件委托
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMain.On_Pause">
+            <summary>
+            pause
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMain.On_Pause(System.Boolean)">
+            <summary>
+            only pause;
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmManual.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmManual.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmManual.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BZGUI.FrmLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.FrmLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.FrmLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BZGUI.Module.Setting.SettingFunc.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:BZGUI.Module.Setting.SettingLaser.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:BZGUI.SettingMachineInfo.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:BZGUI.Module.Setting.SettingPara.ReadValuByMapKeyName(System.String,System.String)">
+            <summary>
+            读Map里面具体参数
+            </summary>
+            <param name="MapKeyName">参数关键字</param>
+            <param name="DefaultValue">没有时写入返回默认值</param>
+            <returns>返回的参数值</returns>
+        </member>
+        <member name="M:BZGUI.FileLog.WriteLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FileLog.OperateLog(System.String)">
+            <summary>
+            记录软件操作
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FileLog.WriteMotionLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FileLog.WriteErrLog(System.String)">
+            <summary>
+            设备异常Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FileLog.Robot_log(System.String)">
+            <summary>
+            机械手运行日志
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Command.TCP_CCD1_Send(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Command.TCP_CCD2_Send(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Command.Com1_Send(System.String)">
+            <summary>
+            串口1发送命令
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Tool.GetArray_Feed4_15(System.Int64,System.Int64,System.Double,System.Double,System.Double[]@,System.Double[]@)">
+            <summary>
+            FEEDER2维矩阵数据表，参数1：行数；参数2：列数；参数3：行间隔；参数4：列间隔；参数5：X方向阵列数据；参数6：Y方向阵列数据。
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FileRw.DeleteFile(System.String)">
+            <summary>
+            根据path是文件夹，还是文件，再删除
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:BZGUI.FunctionSub.FileInit">
+            <summary>
+            创建路径
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FunctionSub.EnumSerialPortNames">
+             <summary>
+             获取计算机串口
+             </summary>
+             <returns></returns>
+             <remarks></remarks>
+            
+        </member>
+        <member name="M:BZGUI.FunctionSub.ExChangeXY(System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+             <summary>
+            坐标系换算
+             </summary>
+             <param name="X">CCD坐标的X值</param>
+             <param name="Y">CCD坐标的Y值</param>
+             <param name="A_x">与CCDX方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="A_y">与CCDY方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="Xn">转换后坐标的X值</param>
+             <param name="Yn">转换后坐标的Y值</param>
+             <returns></returns>
+             <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FunctionSub.FindRowfromSN(System.String)">
+            <summary>
+            100代表没有，也即是新的条码
+            </summary>
+            <param name="HSG_SN"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FunctionSub.Start_NumberKey_Process">
+            <summary>
+            启动屏幕键盘程序
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.FunctionSub.Close_NumberKey_Process">
+            <summary>
+            关闭屏幕键盘进程函数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.MMSY">
+            <summary>
+            MMSY轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2_X">
+            <summary>
+            2站X轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2_Y">
+            <summary>
+            2站Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2_Z">
+            <summary>
+            2站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2_R">
+            <summary>
+            2站R轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2G_Z">
+            <summary>
+            供料Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2G_Y">
+            <summary>
+            供料Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S2L_Z">
+            <summary>
+            拉料Z
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S3_Z">
+            <summary>
+            3站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.BVar.S0_R">
+            <summary>
+            转盘R
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.BVar.RecordErrInfo(System.String)">
+            <summary>
+            异常统计
+            </summary>
+            <param name="ErrInfo"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GTS_ExtmdlInit(System.Int16,System.String)">
+            <summary>
+            gts运动控制卡IO扩展模块初始化
+            </summary>
+            <returns>布尔</returns>
+            <remarks>全局变量Get_ExtDoBit</remarks>
+        </member>
+        <member name="M:BZGUI.Gg.Set_AllServoON(System.Int16,System.Int16,System.Int16)">
+            <summary>
+            伺服使能
+            </summary>
+            <param name="CardNum">卡编号(0~n)</param>
+            <param name="FirstAxis">卡起始轴编号(1~n)</param>
+            <param name="LastAxis">卡末端轴编号</param>
+            <returns>布尔</returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetDi(System.Int32,System.ValueType)">
+            <summary>
+            获取板卡IO[卡号][0-15][1：有输入,0无]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetDo(System.Int16,System.ValueType)">
+            <summary>
+            读取通用输出：1卡号[0,1]，2索引[0,15]；  返回值：1输出打开，0输出关闭
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.SetDo(System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置通用输出:[卡号],[0,15],[1：打开输出，0：关闭输出]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="doIndex"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetExDi(System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输入：GetExDi(模块[0,255]，IO口[0,15]）返回值：0没有输入，1有输入
+            </summary>
+            <param name="mdl"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetExDo(System.Int16,System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输出
+            </summary>
+            <param name="CardNum"></param> 第几张卡上的扩展卡
+            <param name="mdl"></param>主卡上的第几张扩扎卡
+            <param name="i"></param>读取的IO号
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.SetExDo(System.Int16,System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置扩展输出：[板卡号],[IO模块(0开始)], [端口号(0开始)],[输出值：1打开，0关闭)]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetSts(System.Int16,System.Int16)">
+            <summary>
+            清除各轴的报警,限位和读取轴状态
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetServoOnDi(System.Int16,System.Int16)">
+            <summary>
+            读取轴使能状态:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetHomeDi(System.Int32,System.Int16)">
+            <summary>
+            读取原点信号:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.Get_AlarmDi(System.Int32,System.ValueType)">
+            <summary>
+            读取驱动报警:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetLimitDi_Z(System.Int16,System.Int16)">
+            <summary>
+            读取正限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetLimitDi_F(System.Int16,System.Int16)">
+            <summary>
+            读取负限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.ZSPD(System.Int16,System.Int16)">
+            <summary>
+            判断马达是否停止运动【目标位置和编码器位置差在0.2mm内】
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetEncPos(System.Int16,System.Int16)">
+            <summary>
+            获取编码器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gCardNum"></param>
+            <param name="gAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetEncPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的编码器位置，单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetPrfPos(System.Int16,System.Int16)">
+            <summary>
+            获取规划器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetPrfPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的规划器位置,单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.PlusPerUnit(System.Int16,System.Int16)">
+            <summary>
+            每1mm的脉冲数：丝杆导成，减速比，每圈脉冲数，PlusPerUnit(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <param name="CardNum"></param>
+            <param name="AxisNum"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.GetDist(System.Int16,System.Int16,System.Double)">
+            <summary>
+            把距离或角度转换成脉冲
+            </summary>
+            <param name="gtsard"></param>
+            <param name="mAxis"></param>
+            <param name="mDist"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.StepMotion(System.Int16,System.Int16,System.Double,System.Double,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[移动相对距离],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Dist"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.JogMotion(System.Int16,System.Int16,System.Int32,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.AbsMotion(System.Int16,System.Int16,System.Double,System.Double)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[相对于原点的位移距离],[速度]
+            </summary>
+            <param name="aCardNum"></param>
+            <param name="aAxis"></param>
+            <param name="aPosition"></param>
+            <param name="Vel"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.AxisStop(System.Int16,System.Int16)">
+            <summary>
+            停止轴运动（设置运动速度为0模式）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Gg.AxisStart(System.Int16,System.Int16)">
+            <summary>
+            恢复轴运动（速度0-->原有的速度）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Mod_ErrorCode.WriteErrorCode(System.String,System.Int32)">
+            <summary>
+            WriteErrorCode（[报警内容] , [报警类型]）
+            </summary>
+            <param name="WriteData"></param>
+            <param name="index"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.Mod_ErrorCode.CheckSystemTimeStep">
+            <summary>
+            系统时间同步步序号
+            </summary>
+        </member>
+        <member name="F:BZGUI.PVar.FileDirectoryDes">
+            <summary>
+            "D:\\BZ-Program\\"; //复制到本机路径上
+            </summary>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_ProgramPath">
+            <summary>
+            当前程序存放路径:"D:\BZ-Program\BZGUI\"BZGUI
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_ParameterPath">
+            <summary>
+            当前设备重要程序重要参数:"D:\BZ-Parameter\BZGUI\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.FileDirectorySrc">
+            <summary>
+            "\\\\169.254.0.10\\live\\";服务器上软件地址
+            </summary>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_DataPath">
+            <summary>
+            当前设备存放数据路径:"E:\BZ-Data\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_CheckDataPath">
+            <summary>
+            存放复检数据路径:"E:\BZ-Data\MMS\CheckData\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_LogPath">
+            <summary>
+            运行日志路径："E:\BZ-Data\MMS\RunLog\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_CPKDataFilePath">
+            <summary>
+            CPK数据存ini路径:"D:\BZ-Parameter\BAM\CPKData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_YieldDataFileName">
+             <summary>
+            当天良率存放in路径:"D:\BZ-Parameter\BAM\YieldData.ini"
+             </summary>
+             <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_CalibrationFileName">
+            <summary>
+            标定信息存储路径"D:\BZ-Parameter\BAM\Calibration.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_RobotPosFileName">
+            <summary>
+            机械手里面的点位缓存
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_YieldMonthDataFileName">
+            <summary>
+            当月良率存放路径:"D:\BZ-Parameter\BAM\YieldMonthData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_ErrStatisticsPath">
+            <summary>
+            抛料统计文件路径:"D:\BZ-Parameter\BAM\ErrStatistics.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_LightSettingPath">
+            <summary>
+            光源参数存放路径:"D:\BZ-Parameter\BAM\LightSetting.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_AlarmHistoryCSVPath">
+            <summary>
+            异常记录CSV文件路径："E:\BZ-Data\MMS\AlarmHistory_Data\BAMAlarmHistory.csv"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.PublicParPath">
+            <summary>
+            "D:\BZ-Parameter\BAM\PublicPar.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.ParAxisPath">
+            <summary>
+            "D:\BZ-Parameter\BAM\ParAxis.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.CPK_SN_Path">
+            <summary>
+            "D:\BZ-Parameter\BAM\CPK_SN.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.IsSysEmcStop">
+            <summary>
+            急停是否按下标志
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.sPDCAData">
+            <summary>
+            16位PDCA数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.DS_Flag">
+            <summary>
+            单双标志，值1为单，2为双
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.LampStatus">
+            <summary>
+            三色灯状态序号：
+            【10】异常报警,
+            【20】设备初始化完毕,
+            【30】机器工作正常,
+            【40】机器空跑,
+            【50】开机无报警
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.Work_Mode">
+            <summary>
+            工作模式：正常生产[0],CPK[1],空跑[2]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.Sta_Work">
+            <summary>
+            0：供料站；
+            1：人工站；
+            2：组装站；
+            3：保压站；
+            4：复检站；
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.BZ_CCD1_ImagePath">
+            <summary>
+            存放图片路径:"E:\BZ-Data\MMS\CCD_Image\当前日期\CCD1\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.MeshineSW">
+            <summary>
+            版本编号格式：0x.xx
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.ParAxis">
+            <summary>
+            各参数集合
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PVar.mPar.CheckSts">
+            <summary>
+            1:开启安全门；
+            2：开启手持条码枪；
+            3：设备镜像；
+            4：开启外部条码；
+            5：开启SF路径检测；
+            6：；
+            7：开启夹紧定位扫条码；
+            8:空跑开启截图；
+            17：开启演示功能；
+            18：开启一次补正功能；
+            19：开启Errorcode；
+            20：勾上开启PDCA；
+            21：开启HeatBt；
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.PageAlarm.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageAlarm.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageAlarm.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageChart.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageChart.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageChart.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.Instance_SSHInfoShow(System.String)">
+            <summary>
+            SSH show info
+            </summary>
+            <param name="SSHinfo"></param>
+        </member>
+        <member name="M:BZGUI.PageEngineering.Instance_SN_Show(System.String)">
+            <summary>
+            条码操作
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.Btn_Manual_Click(System.Object,System.EventArgs)">
+            <summary>
+            手动
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:BZGUI.PageEngineering.temptest">
+            <summary>
+            手动开始按钮
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.btn_SSHsts_Click(System.Object,System.EventArgs)">
+            <summary>
+            reconnect ssh
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BZGUI.PageEngineering.EMG">
+            <summary>
+            紧急停止处理
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.Instance_ShowDemoMode">
+            <summary>
+            wordmode show
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.AlarmReport">
+            <summary>
+            safe door /axis alarm
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageEngineering.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageEngineering.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageEngineering.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageLogin.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageLogin.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageLogin.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageMachineInfo.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageMachineInfo.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageMachineInfo.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageProduction.btn_Clear_Click(System.Object,System.EventArgs)">
+            <summary>
+            清除当前产量
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:BZGUI.PageProduction.OnshowResult(BZGUI.EnumShowResult)">
+            <summary>
+            显示结果
+            </summary>
+            <param name="ESR"></param>
+        </member>
+        <member name="F:BZGUI.PageProduction.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageProduction.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageProduction.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageSetting.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageSetting.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageSetting.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.PageVision.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.PageVision.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.PageVision.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ParaAxis.LoadParAxis">
+            <summary>
+            加载工程界面各轴参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:BZGUI.ParaAxis.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ParaAxis.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.ParaAxis.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ParaAxisFile.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BZGUI.ParaAxisFile.FresshMachinePar">
+            <summary>
+            把1维参数转换成2维的机械参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:BZGUI.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._add">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._alarmH">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._alarmL">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._back">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._bozhon">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._clear">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._deleteFile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._done">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._down">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._error">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._event">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._fail">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._focus">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._home">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampBlue20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampGray20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampGray201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampGreen20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampGreen201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampOrange20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampRed20">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._lampRed201">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._left">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._login">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._minus">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._newFile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._next">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._ok">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._org">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._right">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._rotate_antiClock">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._rotate_clock">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._setting">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._smile">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._start">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._table">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._teach">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._up">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._userAdmin">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._userOp">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources._wait">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.alarm">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Alarm45x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Alarm50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ARW05LT">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Back">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.BZ">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Camera">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Camera45x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Camera50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.chart">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.checkmark">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Clockwise">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Counterclockwise">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.cursor">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.cut">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Data">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Data48x45">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Data50x46">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.disk">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.disk_edit">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Down">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Download_48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Download_64">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Download_72">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ee">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Excel">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Excel50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Exit_32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Exit_48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Eye">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Eye50x29">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Forward">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.home">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Home49x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.hou">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Image1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ImagePath">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ImagePath50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.keyboard">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.LAMP_BLACK1_01">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Lamp_Green">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.LAMP_GREEN4_02">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.LAMP_RED3_02">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Laser1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Left">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.left_16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Left_24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Left_32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Left_48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Left_Big__">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.LightClose32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.lightOpen32X32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Live">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.logo128">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.logo16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.logo32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.logo48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.logo64">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.ni">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Open">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.OpenExcel">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.OpenImage">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Par_50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Par_72">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.pause">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.PAUSE_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Pause_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.PLAY_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.play_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.qian">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Redo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.refresh">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right_16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right_24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right_32x32">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right_48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Right_Big">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.save">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.save_file">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.SaveAlarmLog">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.SaveAlarmLog50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.script">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.SeeImgC">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.setting">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Setting50x49">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.shang">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.start">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.stop">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.STOP_3D">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Stop_White">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.stop1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Sun16x16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Sun24x24">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Sun48x48">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Undo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.Up">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.user">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.User50x50">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.vision">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.xia">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.xun">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.you">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.zuo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.上_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.下_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.右_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.左_1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.未标题_3">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.正转">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.软件1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.软件11">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.软件2">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.软件3">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:BZGUI.Properties.Resources.软件5">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="M:BZGUI.Calibration.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:BZGUI.TaskControlPanel.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.TaskControlPanel.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.TaskControlPanel.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.ShowResult.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.ShowResult.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.ShowResult.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.SSHctl.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:BZGUI.SSHctl.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:BZGUI.SSHctl.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:BZGUI.SSHTestGUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.SSHTestGUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.SSHTestGUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:BZGUI.SSH.Connect(System.String,System.Int32,System.String,System.String,System.Boolean@)">
+            <summary>
+            using password to conn
+            </summary>
+            <param name="remote"></param>
+            <param name="port"></param>
+            <param name="UserName"></param>
+            <param name="password"></param>
+            <param name="isConn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.Connect(System.String,System.Int32,System.String,System.Boolean@)">
+            <summary>
+            use the key to conn
+            </summary>
+            <param name="remote"></param>
+            <param name="port"></param>
+            <param name="UserName"></param>
+            <param name="isConn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.KeepAliveInterval(System.Int32)">
+            <summary>
+            保持激活间隔的时间
+            </summary>
+            <param name="time_ms"></param>
+        </member>
+        <member name="M:BZGUI.SSH.isConnect">
+            <summary>
+            check the connect status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.disConnect(System.Boolean@)">
+            <summary>
+            dis connnect
+            </summary>
+            <param name="isConn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.ExecuteCommand(System.String)">
+            <summary>
+            send msg
+            </summary>
+            <param name="Command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.readReader">
+            <summary>
+            reader the string from ssh 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BZGUI.SSH.SendAndGetReply(System.String,System.String@,System.Int32)">
+            <summary>
+            send and wait reply
+            </summary>
+            <param name="cmd"></param>
+            <param name="result"></param>
+            <param name="timeout"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BZGUI.SSH_Thread">
+            <summary>
+            实时采集SSH 的数据，弄别的地方会卡
+            </summary>
+        </member>
+        <member name="F:BZGUI.SSH_IDPM_GUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BZGUI.SSH_IDPM_GUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BZGUI.SSH_IDPM_GUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BZGUI.Task0_Machine">
+            <summary>
+            只有用来处理双手启动，类似于总循环
+            </summary>
+        </member>
+        <member name="M:BZGUI.TcpIPHelper.Sendmsg(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.Task1_MMS测试.DryRun">
+            <summary>
+            空跑
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_MMS测试.AutoRun">
+            <summary>
+            自动运行
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_MMS测试.MMS_Test">
+            <summary>
+            MMS_Test
+            </summary>
+        </member>
+        <member name="M:BZGUI.GoHome.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BZGUI.GoHome.GotoHome(System.Int16,System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            GotoHome(short CardNum[卡号], short Axis[轴号], double homeToLimitFDist[极限到原点距离], double searchHomeDist[原点搜索距离], double offsetPos[感应宽度], double homeoffset[原点偏移距离], double vel[搜索原点速度])
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="homeToLimitFDist"></param>
+            <param name="searchHomeDist"></param>
+            <param name="offsetPos"></param>
+            <param name="homeoffset"></param>
+            <param name="vel"></param>
+        </member>
+        <member name="F:BZGUI.Sta1Run.Frm_L1Adddata_tempBarcode">
+            <summary>
+            第一段数据界面增加数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:BZGUI.PDCA.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_测试.DryRun">
+            <summary>
+            空跑
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_测试.AutoRun">
+            <summary>
+            自动运行
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_测试.MMS_Test">
+            <summary>
+            MMS_Test
+            </summary>
+        </member>
+        <member name="M:BZGUI.Task1_测试.IPDM_Test">
+            <summary>
+            IPDM_Test
+            </summary>
+        </member>
+    </members>
+</doc>

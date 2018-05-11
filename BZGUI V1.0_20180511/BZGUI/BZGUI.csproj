@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BZGUI.Program</StartupObject>
+    <RootNamespace>BZGUI</RootNamespace>
+    <AssemblyName>BZTest</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>B_Logo_App.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>B_Logo_App.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Test.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BZappdll, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BZappdll.dll</HintPath>
+    </Reference>
+    <Reference Include="CalNormDistLabrary.1.0.0.0.Fakes">
+      <HintPath>FakesAssemblies\CalNormDistLabrary.1.0.0.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VS.FrameworkCommunication, Version=1.0.0.1, Culture=neutral, PublicKeyToken=e313ed72c2e670ed, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Cognex.VS.FrameworkCommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VS.FrameworkSetup, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e313ed72c2e670ed, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Cognex.VS.FrameworkSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VS.Utility, Version=2.5.1.10, Culture=neutral, PublicKeyToken=e313ed72c2e670ed, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Cognex.VS.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.7.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="LabSSH">
+      <HintPath>bin\Debug\LabSSH\LabSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="BoTech, Version=1.0.6370.24605, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BoTech.dll</HintPath>
+    </Reference>
+    <Reference Include="BZ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BZ.dll</HintPath>
+    </Reference>
+    <Reference Include="CalNormDistLabrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CalNormDistLabrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Renci.SshNet">
+      <HintPath>bin\Debug\LabSSH\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketHelper, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SocketHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UMA_dll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UMA_APP\bin\Debug\UMA_dll.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="XCore">
+      <HintPath>..\XCore\bin\Debug\XCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.2.878, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\Bool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Bool.Designer.cs">
+      <DependentUpon>Bool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Chart\AlarmChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\AlarmChart.Designer.cs">
+      <DependentUpon>AlarmChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\AlarmCode.cs" />
+    <Compile Include="Control\Chart\Chart30Day.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\Chart30Day.Designer.cs">
+      <DependentUpon>Chart30Day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Chart\ChartUPH30Day.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\ChartUPH30Day.Designer.cs">
+      <DependentUpon>ChartUPH30Day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Chart\ChartCPK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\ChartCPK.Designer.cs">
+      <DependentUpon>ChartCPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Chart\ChartYield.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\ChartYield.Designer.cs">
+      <DependentUpon>ChartYield.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Chart\CheckDatactl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Chart\CheckDatactl.Designer.cs">
+      <DependentUpon>CheckDatactl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\InfoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\InfoList.Designer.cs">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\InputClass.Designer.cs">
+      <DependentUpon>InputClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\InputClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\LightControl.Designer.cs">
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LightControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Manual_Motion.cs" />
+    <Compile Include="Control\mFunction.cs" />
+    <Compile Include="Control\mMotion.cs" />
+    <Compile Include="Control\MotorStatus.Designer.cs">
+      <DependentUpon>MotorStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MotorStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\NetMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\NetMonitor.Designer.cs">
+      <DependentUpon>NetMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OutputClass.Designer.cs">
+      <DependentUpon>OutputClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OutputClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Teach.Designer.cs">
+      <DependentUpon>Teach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Teach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\MMS算法\FrmMMS_Calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\MMS算法\FrmMMS_Calculate.Designer.cs">
+      <DependentUpon>FrmMMS_Calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MMS算法\MMS_algorithm.cs" />
+    <Compile Include="Form\Pages\Surport_Form\FrmLaser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmLaser.Designer.cs">
+      <DependentUpon>FrmLaser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmIPDMManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmIPDMManual.Designer.cs">
+      <DependentUpon>FrmIPDMManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmMMSManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmMMSManual.Designer.cs">
+      <DependentUpon>FrmMMSManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\CsvServer.cs" />
+    <Compile Include="Module\Data\ProduceData.cs" />
+    <Compile Include="Module\Data\Toosing.cs" />
+    <Compile Include="Module\Data\UPH.cs" />
+    <Compile Include="Module\Data\Yield.cs" />
+    <Compile Include="Module\PCI9222\LaserHights.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\PCI9222\LaserHights.Designer.cs">
+      <DependentUpon>LaserHights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PCI9222\PCI9222ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\PCI9222\PCI9222ctl.Designer.cs">
+      <DependentUpon>PCI9222ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PCI9222\PCI9222.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\PCI9222\PCI9222.Designer.cs">
+      <DependentUpon>PCI9222.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\PCI9222\DAQ.cs" />
+    <Compile Include="Control\Datagridshow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Datagridshow.Designer.cs">
+      <DependentUpon>Datagridshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Data\CheckData.cs" />
+    <Compile Include="Module\Data\DataManager.cs" />
+    <Compile Include="Module\Data\LoginCtr.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="Form\GUI Forms\Frm_AlarmInfo.Designer.cs">
+      <DependentUpon>Frm_AlarmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_AlarmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Dialog.Designer.cs">
+      <DependentUpon>Frm_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Engineering.Designer.cs">
+      <DependentUpon>Frm_Engineering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Engineering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_LoadProcess.designer.cs">
+      <DependentUpon>Frm_LoadProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_LoadProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_MachineInfo.Designer.cs">
+      <DependentUpon>Frm_MachineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_MachineInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Main.designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_MsgList.Designer.cs">
+      <DependentUpon>Frm_MsgList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_MsgList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Par.Designer.cs">
+      <DependentUpon>Frm_Par.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Par.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Par_CCD.Designer.cs">
+      <DependentUpon>Frm_Par_CCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Par_CCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Production.Designer.cs">
+      <DependentUpon>Frm_Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_ProgressBar.Designer.cs">
+      <DependentUpon>Frm_ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_RunInfo.Designer.cs">
+      <DependentUpon>Frm_RunInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_RunInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_UI.designer.cs">
+      <DependentUpon>Frm_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_UserManagement.Designer.cs">
+      <DependentUpon>Frm_UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\MessageShow.Designer.cs">
+      <DependentUpon>MessageShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\MessageShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Materiel.designer.cs">
+      <DependentUpon>Frm_Materiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Material Layout Forms\Frm_Materiel_6.Designer.cs">
+      <DependentUpon>Frm_Materiel_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Material Layout Forms\Frm_Materiel_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Parameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Parameter.Designer.cs">
+      <DependentUpon>Frm_Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Laser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GUI Forms\Frm_Laser.Designer.cs">
+      <DependentUpon>Frm_Laser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="Form\Pages\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\FrmManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\FrmManual.Designer.cs">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\Surport_Form\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Setting\SettingFunc.cs" />
+    <Compile Include="Module\Setting\SettingLaser.cs" />
+    <Compile Include="Module\Setting\SettingMachinInfo.cs" />
+    <Compile Include="Module\Setting\SettingPara.cs" />
+    <Compile Include="Module\其他\API.cs" />
+    <Compile Include="Module\CapScreenApi.cs" />
+    <Compile Include="Module\文件操作\FileLog.cs" />
+    <Compile Include="Module\工具函数\TCP_Com_Send.cs" />
+    <Compile Include="Module\工具函数\Tool.cs" />
+    <Compile Include="Module\文件操作\FileRw.cs" />
+    <Compile Include="Module\FunctionSub.cs" />
+    <Compile Include="Module\变量定义\BlogoVariable.cs" />
+    <Compile Include="Module\运动控制\Goolgol.cs" />
+    <Compile Include="Module\报警模块\Mod_ErrorCode.cs" />
+    <Compile Include="Module\变量定义\PublicVariable.cs" />
+    <Compile Include="Module\其他\WinAPI.cs" />
+    <Compile Include="Module\运动控制\gts.cs" />
+    <Compile Include="Form\Pages\PageAlarm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageAlarm.Designer.cs">
+      <DependentUpon>PageAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageChart.Designer.cs">
+      <DependentUpon>PageChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageEngineering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageEngineering.Designer.cs">
+      <DependentUpon>PageEngineering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageLogin.Designer.cs">
+      <DependentUpon>PageLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageMachineInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageMachineInfo.Designer.cs">
+      <DependentUpon>PageMachineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageProduction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageProduction.Designer.cs">
+      <DependentUpon>PageProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageSetting.Designer.cs">
+      <DependentUpon>PageSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pages\PageVision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Pages\PageVision.Designer.cs">
+      <DependentUpon>PageVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ParaAxis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ParaAxis.Designer.cs">
+      <DependentUpon>ParaAxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\文件操作\ParaAxis.cs" />
+    <Compile Include="Module\PCI9222\Dask.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module\标定模块\Calibration.cs" />
+    <Compile Include="Control\TaskControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\TaskControlPanel.Designer.cs">
+      <DependentUpon>TaskControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ShowResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ShowResult.Designer.cs">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\其他\Algorithm.cs" />
+    <Compile Include="Module\SSH\SSHctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\SSH\SSHctl.Designer.cs">
+      <DependentUpon>SSHctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SSH\SSHTestGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\SSH\SSHTestGUI.Designer.cs">
+      <DependentUpon>SSHTestGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\SSH\SSH.cs" />
+    <Compile Include="Module\SSH\SSH_Thread.cs" />
+    <Compile Include="Module\SSH\SSH_IDPM_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\SSH\SSH_IDPM_GUI.Designer.cs">
+      <DependentUpon>SSH_IDPM_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\Task0_Machine.cs" />
+    <Compile Include="Tasks\Task2_组装.cs" />
+    <Compile Include="Module\工具函数\TcpIP.cs" />
+    <Compile Include="Tasks\Task1_MMS测试.cs" />
+    <Compile Include="WorkSta\Home.cs" />
+    <Compile Include="WorkSta\Sta1Run.cs" />
+    <Compile Include="Module\数据上传\PDCA.cs" />
+    <Compile Include="WorkSta\Sta2Run.cs" />
+    <Compile Include="WorkSta\Sta3Run.cs" />
+    <Compile Include="WorkSta\Sta4Run.cs" />
+    <Compile Include="WorkSta\Sta0Run.cs" />
+    <Compile Include="Tasks\Task1_测试.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\Bool.resx">
+      <DependentUpon>Bool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\AlarmChart.resx">
+      <DependentUpon>AlarmChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\Chart30Day.resx">
+      <DependentUpon>Chart30Day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\ChartCPK.resx">
+      <DependentUpon>ChartCPK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\ChartUPH30Day.resx">
+      <DependentUpon>ChartUPH30Day.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\ChartYield.resx">
+      <DependentUpon>ChartYield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Chart\CheckDatactl.resx">
+      <DependentUpon>CheckDatactl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\InfoList.resx">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\InputClass.resx">
+      <DependentUpon>InputClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LightControl.resx">
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MotorStatus.resx">
+      <DependentUpon>MotorStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\NetMonitor.resx">
+      <DependentUpon>NetMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\OutputClass.resx">
+      <DependentUpon>OutputClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Teach.resx">
+      <DependentUpon>Teach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Datagridshow.resx">
+      <DependentUpon>Datagridshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_AlarmInfo.resx">
+      <DependentUpon>Frm_AlarmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Dialog.resx">
+      <DependentUpon>Frm_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Engineering.resx">
+      <DependentUpon>Frm_Engineering.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_LoadProcess.resx">
+      <DependentUpon>Frm_LoadProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_MachineInfo.resx">
+      <DependentUpon>Frm_MachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_MsgList.resx">
+      <DependentUpon>Frm_MsgList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Par.resx">
+      <DependentUpon>Frm_Par.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Par_CCD.resx">
+      <DependentUpon>Frm_Par_CCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Production.resx">
+      <DependentUpon>Frm_Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_ProgressBar.resx">
+      <DependentUpon>Frm_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_RunInfo.resx">
+      <DependentUpon>Frm_RunInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_UI.resx">
+      <DependentUpon>Frm_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_UserManagement.resx">
+      <DependentUpon>Frm_UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\MessageShow.resx">
+      <DependentUpon>MessageShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Materiel.resx">
+      <DependentUpon>Frm_Materiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Material Layout Forms\Frm_Materiel_6.resx">
+      <DependentUpon>Frm_Materiel_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Parameter.resx">
+      <DependentUpon>Frm_Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GUI Forms\Frm_Laser.resx">
+      <DependentUpon>Frm_Laser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\FrmManual.en-US.resx">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\FrmManual.zh-CN.resx">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageAlarm.en-US.resx">
+      <DependentUpon>PageAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageAlarm.zh-CN.resx">
+      <DependentUpon>PageAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageChart.en-US.resx">
+      <DependentUpon>PageChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageChart.zh-CN.resx">
+      <DependentUpon>PageChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageEngineering.en-US.resx">
+      <DependentUpon>PageEngineering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageEngineering.zh-CN.resx">
+      <DependentUpon>PageEngineering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageLogin.en-US.resx">
+      <DependentUpon>PageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageLogin.resx">
+      <DependentUpon>PageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageLogin.zh-CN.resx">
+      <DependentUpon>PageLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageMachineInfo.en-US.resx">
+      <DependentUpon>PageMachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageMachineInfo.zh-CN.resx">
+      <DependentUpon>PageMachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageProduction.en-US.resx">
+      <DependentUpon>PageProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageProduction.zh-CN.resx">
+      <DependentUpon>PageProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageSetting.en-US.resx">
+      <DependentUpon>PageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageSetting.zh-CN.resx">
+      <DependentUpon>PageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageVision.en-US.resx">
+      <DependentUpon>PageVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageVision.zh-CN.resx">
+      <DependentUpon>PageVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\MMS算法\FrmMMS_Calculate.resx">
+      <DependentUpon>FrmMMS_Calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\Surport_Form\FrmLaser.resx">
+      <DependentUpon>FrmLaser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\Surport_Form\FrmIPDMManual.resx">
+      <DependentUpon>FrmIPDMManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\Surport_Form\FrmMMSManual.resx">
+      <DependentUpon>FrmMMSManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\PCI9222\LaserHights.resx">
+      <DependentUpon>LaserHights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageAlarm.resx">
+      <DependentUpon>PageAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageChart.resx">
+      <DependentUpon>PageChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageEngineering.resx">
+      <DependentUpon>PageEngineering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageMachineInfo.resx">
+      <DependentUpon>PageMachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageProduction.resx">
+      <DependentUpon>PageProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageSetting.resx">
+      <DependentUpon>PageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\PageVision.resx">
+      <DependentUpon>PageVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\FrmManual.resx">
+      <DependentUpon>FrmManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pages\Surport_Form\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ParaAxis.resx">
+      <DependentUpon>ParaAxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\PCI9222\PCI9222ctl.resx">
+      <DependentUpon>PCI9222ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\PCI9222\PCI9222.resx">
+      <DependentUpon>PCI9222.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\TaskControlPanel.resx">
+      <DependentUpon>TaskControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ShowResult.resx">
+      <DependentUpon>ShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\SSH\SSHctl.resx">
+      <DependentUpon>SSHctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\SSH\SSHTestGUI.resx">
+      <DependentUpon>SSHTestGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\SSH\SSH_IDPM_GUI.resx">
+      <DependentUpon>SSH_IDPM_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <COMReference Include="AxMSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\左-1.bmp" />
+    <None Include="Resources\正转.png" />
+    <None Include="Resources\右-1.bmp" />
+    <None Include="Resources\下-1.bmp" />
+    <None Include="Resources\未标题-3.gif" />
+    <None Include="Resources\上-1.bmp" />
+    <None Include="Resources\软件11.gif" />
+    <None Include="Resources\软件5.gif" />
+    <None Include="Resources\软件3.gif" />
+    <None Include="Resources\软件2.gif" />
+    <None Include="Resources\软件1.gif" />
+    <None Include="Resources\vision.png" />
+    <None Include="Resources\User50x50.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Up.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Sun48x48.png" />
+    <None Include="Resources\Sun24x24.png" />
+    <None Include="Resources\Sun16x16.png" />
+    <None Include="Resources\stop1.png" />
+    <None Include="Resources\Stop_White.png" />
+    <None Include="Resources\STOP_3D.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\Setting50x49.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\SeeImgC.png" />
+    <None Include="Resources\script.png" />
+    <None Include="Resources\SaveAlarmLog50x50.png" />
+    <None Include="Resources\SaveAlarmLog.png" />
+    <None Include="Resources\save_file.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\Right_Big.png" />
+    <None Include="Resources\Right.png" />
+    <None Include="Resources\Right 48x48.png" />
+    <None Include="Resources\Right 32x32.png" />
+    <None Include="Resources\Right 24x24.png" />
+    <None Include="Resources\Right 16x16.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\play_White.png" />
+    <None Include="Resources\PLAY_3D.png" />
+    <None Include="Resources\Pause_White.png" />
+    <None Include="Resources\PAUSE_3D.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\Par_72.png" />
+    <None Include="Resources\Par_50x50.png" />
+    <None Include="Resources\OpenImage.png" />
+    <None Include="Resources\OpenExcel.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\logo128.jpg" />
+    <None Include="Resources\logo64.gif" />
+    <None Include="Resources\logo48.gif" />
+    <None Include="Resources\logo32.gif" />
+    <None Include="Resources\logo16.gif" />
+    <None Include="Resources\Live.png" />
+    <None Include="Resources\lightOpen32X32.png" />
+    <None Include="Resources\LightClose32x32.png" />
+    <None Include="Resources\Left_Big -.png" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Left 48x48.png" />
+    <None Include="Resources\Left 32x32.png" />
+    <None Include="Resources\Left 24x24.png" />
+    <None Include="Resources\left 16x16.png" />
+    <None Include="Resources\LAMP-RED3-02.bmp" />
+    <None Include="Resources\LAMP-GREEN4-02.bmp" />
+    <None Include="Resources\Lamp-Green.JPG" />
+    <None Include="Resources\LAMP-BLACK1-01.bmp" />
+    <None Include="Resources\Lamp_Green.JPG" />
+    <None Include="Resources\keyboard.png" />
+    <None Include="Resources\ImagePath50x50.png" />
+    <None Include="Resources\ImagePath.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Home49x50.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\Forward.png" />
+    <None Include="Resources\Eye50x29.png" />
+    <None Include="Resources\Eye.png" />
+    <None Include="Resources\Exit_48.png" />
+    <None Include="Resources\Exit_32.png" />
+    <None Include="Resources\Excel50x50.png" />
+    <None Include="Resources\Excel.png" />
+    <None Include="Resources\ee.png" />
+    <None Include="Resources\Download_72.png" />
+    <None Include="Resources\Download_64.png" />
+    <None Include="Resources\Download_48.png" />
+    <None Include="Resources\Down.png" />
+    <None Include="Resources\disk_edit.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\Data50x46.png" />
+    <None Include="Resources\Data48x45.png" />
+    <None Include="Resources\Data.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\Counterclockwise.png" />
+    <None Include="Resources\Clockwise.png" />
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\chart.png" />
+    <None Include="Resources\Camera50x50.png" />
+    <None Include="Resources\Camera45x45.png" />
+    <None Include="Resources\Camera.png" />
+    <None Include="Resources\BZ-NewLog.jpg" />
+    <None Include="Resources\BZ.jpg" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\ARW05LT.png" />
+    <None Include="Resources\Alarm50x50.png" />
+    <None Include="Resources\Alarm45x45.png" />
+    <None Include="Resources\alarm.png" />
+    <None Include="Resources\_wait.png" />
+    <None Include="Resources\_userOp.jpg" />
+    <None Include="Resources\_userAdmin.jpg" />
+    <None Include="Resources\_up.png" />
+    <None Include="Resources\_teach.png" />
+    <None Include="Resources\_table.png" />
+    <None Include="Resources\_stop.png" />
+    <None Include="Resources\_start.png" />
+    <None Include="Resources\_smile.png" />
+    <None Include="Resources\_setting.png" />
+    <None Include="Resources\_rotate_clock.png" />
+    <None Include="Resources\_rotate_antiClock.png" />
+    <None Include="Resources\_right.png" />
+    <None Include="Resources\_pause.png" />
+    <None Include="Resources\_org.png" />
+    <None Include="Resources\_ok.png" />
+    <None Include="Resources\_next.png" />
+    <None Include="Resources\_newFile.png" />
+    <None Include="Resources\_minus.png" />
+    <None Include="Resources\_login.png" />
+    <None Include="Resources\_left.png" />
+    <None Include="Resources\_lampRed201.png" />
+    <None Include="Resources\_lampRed20.png" />
+    <None Include="Resources\_lampOrange20.png" />
+    <None Include="Resources\_lampGreen201.png" />
+    <None Include="Resources\_lampGreen20.png" />
+    <None Include="Resources\_lampGray201.png" />
+    <None Include="Resources\_lampGray20.png" />
+    <None Include="Resources\_lampBlue20.png" />
+    <None Include="Resources\_home.png" />
+    <None Include="Resources\_focus.png" />
+    <None Include="Resources\_fail.png" />
+    <None Include="Resources\_event.png" />
+    <None Include="Resources\_error.png" />
+    <None Include="Resources\_down.png" />
+    <None Include="Resources\_done.png" />
+    <None Include="Resources\_deleteFile.png" />
+    <None Include="Resources\_clear.png" />
+    <None Include="Resources\_bozhon.png" />
+    <None Include="Resources\_back.png" />
+    <None Include="Resources\_alarmL.png" />
+    <None Include="Resources\_alarmH.png" />
+    <None Include="Resources\_add.png" />
+    <None Include="Resources\Laser.png" />
+    <None Include="Icon\Laser.png" />
+    <None Include="Icon\背景透明\zuo.png" />
+    <None Include="Icon\背景透明\you.png" />
+    <None Include="Icon\背景透明\xun.png" />
+    <None Include="Icon\背景透明\xia.png" />
+    <None Include="Icon\背景透明\shang.png" />
+    <None Include="Icon\背景透明\qian.png" />
+    <None Include="Icon\背景透明\ni.png" />
+    <None Include="Icon\背景透明\hou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom.png" />
+    <Content Include="Test.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>

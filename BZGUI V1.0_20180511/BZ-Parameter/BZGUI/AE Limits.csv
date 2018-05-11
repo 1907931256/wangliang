@@ -1,0 +1,6 @@
+MMS,Min Current,Max Current,Avg Current,LayserPZ1 Min Dis,LayserPZ1 Max Dis,LayserPZ2 Min Dis,LayserPZ2 Max Dis,LayserPZ3 Min Dis,LayserPZ3 Max Dis,Start angle ¦ÈX,End angle ¦ÈX,Start angle ¦ÈY,End angle ¦ÈY,Start angle ¦ÈZ,End angle ¦ÈZ,soft-stop,range
+Upper Limit,NA,NA,NA,1,1,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA
+Nominal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NA,NA
+Lower Limit,NA,NA,NA,1,1,0,0,0,0,0,0,0,0,0,0,NA,NA
+Offset,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NA,NA
+Unit,mA,mA,mA,mm,mm,mm,mm,mm,mm,mm,¡ã,¡ã,¡ã,¡ã,¡ã,um,um

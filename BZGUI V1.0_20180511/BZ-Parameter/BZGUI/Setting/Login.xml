@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<LoginCtr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AdminUser>软件工程师</AdminUser>
+  <AdminPwd>BZMMS</AdminPwd>
+  <TecUser>BOTECH</TecUser>
+  <TecPwd>1</TecPwd>
+  <opUser>OP</opUser>
+  <opPwd> </opPwd>
+  <BuildDate>2018.04.21</BuildDate>
+  <HWVision>VJ1.0.1</HWVision>
+  <SWUpdate>2018.04.21</SWUpdate>
+</LoginCtr>

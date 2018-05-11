@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalNormDistLabrary.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CalNormDistLabrary.Fakes.ShimCalNormDistClass">
+            <summary>CalNormDistLabrary.CalNormDistClass 的填充码类型</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.ShimCalNormDistClass.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.ShimCalNormDistClass.#ctor(CalNormDistLabrary.CalNormDistClass)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.ShimCalNormDistClass.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.ShimCalNormDistClass.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalDensityDistDoubleArrayRefDoubleArrayRef">
+            <summary>设置 CalNormDistClass.CalDensityDist(Double[]&amp; outData_X, Double[]&amp; outData_Y) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalEveryThreeDataAvgInt32Array">
+            <summary>设置 CalNormDistClass.CalEveryThreeDataAvg(Int32[] freqData) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalFrequencyDataDoubleArray">
+            <summary>设置 CalNormDistClass.CalFrequencyData(Double[] binsData) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalGaussianDistDoubleArrayRefDoubleArrayRef">
+            <summary>设置 CalNormDistClass.CalGaussianDist(Double[]&amp; outData_X, Double[]&amp; outData_Y) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalStepDataDoubleArray">
+            <summary>设置 CalNormDistClass.CalStepData(Double[] data) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.CalVarianceDoubleArray">
+            <summary>设置 CalNormDistClass.CalVariance(Double[] data) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.ConstructorDoubleArrayDoubleDoubleDouble">
+            <summary>设置 CalNormDistClass.CalNormDistClass(Double[] data, Double sUsl, Double sLsl, Double sTarget) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.DensityGroupSetInt32">
+            <summary>设置 CalNormDistClass.set_DensityGroup(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.SetBinsData">
+            <summary>设置 CalNormDistClass.SetBinsData() 的 填充码</summary>
+        </member>
+        <member name="T:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalDensityDistDoubleArrayRefDoubleArrayRef">
+            <summary>设置 CalNormDistClass.CalDensityDist(Double[]&amp; outData_X, Double[]&amp; outData_Y) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalEveryThreeDataAvgInt32Array">
+            <summary>设置 CalNormDistClass.CalEveryThreeDataAvg(Int32[] freqData) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalFrequencyDataDoubleArray">
+            <summary>设置 CalNormDistClass.CalFrequencyData(Double[] binsData) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalGaussianDistDoubleArrayRefDoubleArrayRef">
+            <summary>设置 CalNormDistClass.CalGaussianDist(Double[]&amp; outData_X, Double[]&amp; outData_Y) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalStepDataDoubleArray">
+            <summary>设置 CalNormDistClass.CalStepData(Double[] data) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.CalVarianceDoubleArray">
+            <summary>设置 CalNormDistClass.CalVariance(Double[] data) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.DensityGroupSetInt32">
+            <summary>设置 CalNormDistClass.set_DensityGroup(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.ShimCalNormDistClass.AllInstances.SetBinsData">
+            <summary>设置 CalNormDistClass.SetBinsData() 的 填充码</summary>
+        </member>
+        <member name="T:CalNormDistLabrary.Fakes.StubCalNormDistClass">
+            <summary>CalNormDistLabrary.CalNormDistClass 的存根类型</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.StubCalNormDistClass.#ctor(System.Double[],System.Double,System.Double,System.Double)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CalNormDistLabrary.Fakes.StubCalNormDistClass.InitializeStub">
+            <summary>初始化 type StubCalNormDistClass 的新实例</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.StubCalNormDistClass.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.StubCalNormDistClass.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CalNormDistLabrary.Fakes.StubCalNormDistClass.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

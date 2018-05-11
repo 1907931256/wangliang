@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XCore", "XCore\XCore.csproj", "{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZGUI", "BZGUI\BZGUI.csproj", "{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2917E7-0F87-44E4-9DB1-C30109F00EBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
