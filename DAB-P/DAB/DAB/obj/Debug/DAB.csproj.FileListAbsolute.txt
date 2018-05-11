@@ -1,0 +1,97 @@
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\DAB.xml
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\DAB.exe
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\DAB.pdb
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\en-GB\DAB.resources.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\en-US\DAB.resources.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\Interop.MSScriptControl.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\bin\Debug\AxInterop.MSScriptControl.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\Interop.MSScriptControl.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\AxInterop.MSScriptControl.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.csproj.ResolveComReference.cache
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.InfoList.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.InputClass.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.LightControl.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.MotorStatus.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.OutputClass.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Teach.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_AlarmInfo.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Dialog.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Engineering.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_LoadProcess.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Login.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_MachineInfo.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Main.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_MsgList.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Par.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Par_CCD.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Production.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_ProgressBar.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_RunInfo.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_UI.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_UserManagement.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.MessageShow.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Materiel.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Form1.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Properties.Resources.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Main.en-GB.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.Frm_Main.en-US.resources
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.csproj.GenerateResource.Cache
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\en-GB\DAB.resources.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\en-US\DAB.resources.dll
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.exe
+E:\2018\DAM XA0.101\DAB\DAB\DAB\obj\Debug\DAB.pdb
+D:\BZ-Program\DAB\DAB\bin\Debug\DAB.xml
+D:\BZ-Program\DAB\DAB\bin\Debug\DAB.exe
+D:\BZ-Program\DAB\DAB\bin\Debug\DAB.pdb
+D:\BZ-Program\DAB\DAB\bin\Debug\en-GB\DAB.resources.dll
+D:\BZ-Program\DAB\DAB\bin\Debug\en-US\DAB.resources.dll
+D:\BZ-Program\DAB\DAB\bin\Debug\Interop.MSScriptControl.dll
+D:\BZ-Program\DAB\DAB\bin\Debug\AxInterop.MSScriptControl.dll
+D:\BZ-Program\DAB\DAB\obj\Debug\Interop.MSScriptControl.dll
+D:\BZ-Program\DAB\DAB\obj\Debug\AxInterop.MSScriptControl.dll
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.csproj.ResolveComReference.cache
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.InfoList.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.InputClass.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.LightControl.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.MotorStatus.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.OutputClass.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Teach.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_AlarmInfo.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Dialog.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Engineering.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_LoadProcess.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Login.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_MachineInfo.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Main.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_MsgList.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Par.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Par_CCD.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Production.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_ProgressBar.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_RunInfo.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_UI.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_UserManagement.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.MessageShow.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Materiel.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Form1.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Properties.Resources.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Main.en-GB.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.Frm_Main.en-US.resources
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.csproj.GenerateResource.Cache
+D:\BZ-Program\DAB\DAB\obj\Debug\en-GB\DAB.resources.dll
+D:\BZ-Program\DAB\DAB\obj\Debug\en-US\DAB.resources.dll
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.exe
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.pdb
+D:\BZ-Program\DAB\DAB\obj\Debug\DAB.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\bin\Debug\DAB.xml
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\obj\Debug\AxInterop.MSScriptControl.dll
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\obj\Debug\DAB.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\obj\Debug\DAB.exe
+C:\Users\Administrator\Desktop\DAB-P\DAB\DAB\obj\Debug\DAB.pdb
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\bin\Debug\DAB.xml
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\obj\Debug\AxInterop.MSScriptControl.dll
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\obj\Debug\DAB.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\obj\Debug\DAB.exe
+C:\Users\Administrator\Desktop\wangliang\DAB-P\DAB\DAB\obj\Debug\DAB.pdb

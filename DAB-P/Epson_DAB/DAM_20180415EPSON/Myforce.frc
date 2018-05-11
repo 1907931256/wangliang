@@ -1,0 +1,276 @@
+ENVT0100,LM:2018/04/26 13:45:48:316,DS:0000004443,CS:29511,MA:46-0A-64-D1-78-83,EI:           
+sVersion="1.0.0"
+nNumberOfForceControls=1
+ForceControl1 {
+	nFCNo=1
+	sLabel=""
+	nCoordinateSystem=0
+	Enabled {
+		bFx=False
+		bFy=False
+		bFz=True
+		bTx=False
+		bTy=False
+		bTz=False
+	}
+	Fx {
+		rSpring=0
+		rDamper=10
+		rMass=10
+	}
+	Fy {
+		rSpring=0
+		rDamper=10
+		rMass=10
+	}
+	Fz {
+		rSpring=0
+		rDamper=2
+		rMass=1
+	}
+	Tx {
+		rSpring=0
+		rDamper=3000
+		rMass=30000
+	}
+	Ty {
+		rSpring=0
+		rDamper=3000
+		rMass=30000
+	}
+	Tz {
+		rSpring=0
+		rDamper=3000
+		rMass=30000
+	}
+	bTargetForcePriorityMode=False
+	TargetForce {
+		rFx=0
+		rFy=0
+		rFz=20
+		rTx=0
+		rTy=0
+		rTz=0
+	}
+	LimitSpeed {
+		rS=50
+		rR=25
+		rJ=50
+	}
+	LimitAccel {
+		rS=200
+		rR=100
+		rJ=100
+	}
+	sDescription=""
+	sLastModified="2018/04/26 21:45:48:303"
+}
+nNumberOfForceCoordSystems=1
+ForceCoordSys1 {
+	nFCSNo=1
+	sLabel=""
+	sDescription=""
+	Position {
+		rX=0
+		rY=0
+		rZ=0
+	}
+	Orientation {
+		nMode_CoordinateSystem=2
+		rU=0
+		rV=0
+		rW=0
+		nRobotLocal=0
+	}
+	sLastModified="2018/04/26 21:45:48:305"
+}
+nNumberOfForceTriggers=2
+ForceTrigger1 {
+	nFTNo=0
+	sLabel=""
+	sDescription=""
+	nCoordinateSystem=0
+	nForceSensor=1
+	nOperator=0
+	nTriggerMode=0
+	Enabled {
+		bFx=False
+		bFy=False
+		bFz=False
+		bTx=False
+		bTy=False
+		bTz=False
+		bFmag=False
+		bTmag=False
+	}
+	Fx {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fy {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fz {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tx {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Ty {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tz {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fmag {
+		nAxes=0
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=0
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tmag {
+		nAxes=0
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=0
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	sLastModified="2018/04/26 21:45:48:307"
+}
+ForceTrigger2 {
+	nFTNo=1
+	sLabel=""
+	sDescription=""
+	nCoordinateSystem=0
+	nForceSensor=1
+	nOperator=0
+	nTriggerMode=0
+	Enabled {
+		bFx=False
+		bFy=False
+		bFz=True
+		bTx=False
+		bTy=False
+		bTz=False
+		bFmag=False
+		bTmag=False
+	}
+	Fx {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fy {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fz {
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=-1000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tx {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Ty {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tz {
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=-100000
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Fmag {
+		nAxes=0
+		nPolarity=0
+		rUpperLevel=1000
+		rLowerLevel=0
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	Tmag {
+		nAxes=0
+		nPolarity=0
+		rUpperLevel=100000
+		rLowerLevel=0
+		bLPF_Enabled=False
+		rLPF_TimeConstant=0.0099999997764826
+	}
+	sLastModified="2018/04/26 21:45:48:307"
+}
+nNumberOfMonitors=1
+ForceMonitor1 {
+	nFMNo=1
+	sLabel=""
+	sDescription=""
+	nCoordinateSystem=0
+	nForceSensor=1
+	Axes {
+		nFmag=0
+		nTmag=0
+	}
+	LPF_Enabled {
+		bFx=False
+		bFy=False
+		bFz=True
+		bTx=False
+		bTy=False
+		bTz=False
+		bFmag=False
+		bTmag=False
+	}
+	LPF_TimeConstant {
+		rFx=0.0099999997764826
+		rFy=0.0099999997764826
+		rFz=0.0099999997764826
+		rTx=0.0099999997764826
+		rTy=0.0099999997764826
+		rTz=0.0099999997764826
+		rFmag=0.0099999997764826
+		rTmag=0.0099999997764826
+	}
+	sLastModified="2018/04/26 21:45:48:308"
+}

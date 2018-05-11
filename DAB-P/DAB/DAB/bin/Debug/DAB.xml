@@ -1,0 +1,946 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAB</name>
+    </assembly>
+    <members>
+        <member name="F:DAB.InfoList.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:DAB.InfoList.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:DAB.InfoList.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:DAB.mFunction.NSetDO(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            参数：[0板卡，1扩展模块]，[板卡号0-2]，[模块号0-3]，[输出端口号0-15]
+            </summary>
+            <param name="CardType"></param>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.mFunction.NGetDO(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            参数：[0板卡，1扩展模块]，[板卡号0-2]，[模块号0-3]，[输出端口号0-15]
+            </summary>
+            <param name="CardType"></param>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.mFunction.mPostion.TeachAxis1">
+            <summary>
+            Teach控件1轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.mFunction.mPostion.TeachAxis2">
+            <summary>
+            Teach控件2轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.mFunction.mPostion.TeachAxis3">
+            <summary>
+            Teach控件3轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.mFunction.mPostion.TeachAxis4">
+            <summary>
+            Teach控件4轴[Tag号],[点位编号]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.Card1OfAxis">
+            <summary>
+            第一张板卡的轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.Card2OfAxis">
+            <summary>
+            第二张板卡轴数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.IniFileName">
+            <summary>
+            My.Application.Info.DirectoryPath + "\Setting.dll"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.AxisTmplPos">
+            <summary>
+            记录轴目标的位置（脉冲）AxisTmplPos(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.LeadLength">
+            <summary>
+            丝杆导成
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.GeerRate">
+            <summary>
+            减速比
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.PlusPerR">
+            <summary>
+            每圈的脉冲数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Tools.AxisSpeed">
+            <summary>
+            轴的速度mm/s
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Engineering.FresshMachinePar">
+            <summary>
+            把1维参数转换成2维的机械参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Engineering.LoadParAxis">
+            <summary>
+            加载工程界面各轴参数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Engineering.DrawSpline(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Double},System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary> 
+            绘制曲线函数
+            </summary>
+            <param name="listX">X值集合</param>
+            <param name="listY">Y值集合</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="M:DAB.Frm_Engineering.CommandAutoS0_Click(System.Object,System.EventArgs)">
+            <summary>
+            供料手动界面自动运行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DAB.Frm_Engineering.CommandAutoS3_Click(System.Object,System.EventArgs)">
+            <summary>
+            3站手动界面自动运行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DAB.Frm_Engineering.CommandAutoS4_Click(System.Object,System.EventArgs)">
+            <summary>
+            4站手动界面自动运行
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DAB.Frm_Engineering.Rbt_SendCmd(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            [1:机械手执行的命令],[2:执行的步序号],[3:运动速度百分比],[4:OffsetX],[5:OffsetY],[6:OffsetZ],[7:OffsetR],[8:点位编号],[9:轴编号],[10:运动距离],[11:运动方向],[12:料盘编号],[13:料件编号],[14:运动速度]
+            </summary>
+            <param name="Item"></param>
+            <param name="Pos_Num"></param>
+            <param name="Rbt_Speed"></param>
+            <param name="OffsetX"></param>
+            <param name="OffsetY"></param>
+            <param name="OffsetZ"></param>
+            <param name="OffsetR"></param>
+            <param name="Px"></param>
+            <param name="Axis"></param>
+            <param name="Length"></param>
+            <param name="Direction"></param>
+            <param name="Pallet_Num"></param>
+            <param name="Point_Num"></param>
+            <param name="Speeds"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Par.CheeckPar">
+            <summary>
+            检测参数是否在范围内
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Production.ExchangeCpkData">
+            <summary>
+            数据交换
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Production.CalculateYield">
+            <summary>
+            更新生产数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Frm_Production.ShowCurByClick(System.Int32,System.Windows.Forms.DataVisualization.Charting.Chart)">
+            <summary>
+            鼠标点击，通过环号显示游标，并缩放到响应位置函数
+            </summary>
+            <param name="ringNum">环号</param>
+            <param name="chart">Chart控件</param>
+        </member>
+        <member name="T:DAB.Frm_Production.nCPK">
+            ******CPK结构体********
+        </member>
+        <member name="M:DAB.FileLog.WriteLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FileLog.OperateLog(System.String)">
+            <summary>
+            记录软件操作
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FileLog.WriteMotionLog(System.String)">
+            <summary>
+            设备正常运行Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FileLog.WriteErrLog(System.String)">
+            <summary>
+            设备异常Log写入
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FileLog.Robot_log(System.String)">
+            <summary>
+            机械手运行日志
+            </summary>
+            <param name="Msg"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Command.TCP_CCD_Send(System.String,System.String)">
+            <summary>
+            CCD网络发送，已经含有回车换行符
+            </summary>
+            <param name="cmd"></param>
+            /// <param name="sn"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Command.TCP_CCD_Send(System.String)">
+            <summary>
+            网络发送，已经含有回车符
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Command.TCP_PDCA_Send(System.String)">
+            <summary>
+            返回值1：成功，2：网络异常，3：其它异常
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAB.Command.TCP_Barcode_Send(System.String)">
+            <summary>
+            返回值1：成功，2：网络异常，3：其它异常
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAB.Command.Com1_Send(System.String)">
+            <summary>
+            串口1发送命令
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Tool.GetArray_Feed4_15(System.Int64,System.Int64,System.Double,System.Double,System.Double[]@,System.Double[]@)">
+            <summary>
+            FEEDER2维矩阵数据表，参数1：行数；参数2：列数；参数3：行间隔；参数4：列间隔；参数5：X方向阵列数据；参数6：Y方向阵列数据。
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Tool.ExcelToDT(System.String,System.Int32)">
+            <summary>
+            把EXCEL文件当做一个数据源来进行数据的读取操作
+            </summary>
+            <param name="Path"></param>
+            <param name="sheetIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAB.Tool.Delay.InitialTime">
+            <summary>
+            获取当前时间计数
+            </summary>
+        </member>
+        <member name="M:DAB.Tool.Delay.TimeIsUp(System.Int32)">
+            <summary>
+            时间计数到,单位ms
+            </summary>
+            <param name="delayTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAB.FunctionSub.FileInit">
+            <summary>
+            创建路径
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FunctionSub.EnumSerialPortNames">
+             <summary>
+             获取计算机串口
+             </summary>
+             <returns></returns>
+             <remarks></remarks>
+            
+        </member>
+        <member name="M:DAB.FunctionSub.ExChangeXY(System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+             <summary>
+            坐标系换算
+             </summary>
+             <param name="X">CCD坐标的X值</param>
+             <param name="Y">CCD坐标的Y值</param>
+             <param name="A_x">与CCDX方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="A_y">与CCDY方向夹角为锐角轴的角度(轴的正方向与CCD 0度方向的夹角)</param>
+             <param name="Xn">转换后坐标的X值</param>
+             <param name="Yn">转换后坐标的Y值</param>
+             <returns></returns>
+             <remarks></remarks>
+        </member>
+        <member name="M:DAB.FunctionSub.FindRowfromSN(System.String)">
+            <summary>
+            100代表没有，也即是新的条码
+            </summary>
+            <param name="HSG_SN"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FunctionSub.Start_NumberKey_Process">
+            <summary>
+            启动屏幕键盘程序
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.FunctionSub.Close_NumberKey_Process">
+            <summary>
+            关闭屏幕键盘进程函数
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2_X">
+            <summary>
+            2站X轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2_Y">
+            <summary>
+            2站Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2_Z">
+            <summary>
+            2站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2_R">
+            <summary>
+            2站R轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2G_Z">
+            <summary>
+            供料Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2G_Y">
+            <summary>
+            供料Y轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S2L_Z">
+            <summary>
+            拉料Z
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S3_Z">
+            <summary>
+            3站Z轴
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.BVar.S0_R">
+            <summary>
+            转盘R
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.BVar.RecordErrInfo(System.String)">
+            <summary>
+            异常统计
+            </summary>
+            <param name="ErrInfo"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GTS_ExtmdlInit(System.Int16,System.String)">
+            <summary>
+            gts运动控制卡IO扩展模块初始化
+            </summary>
+            <returns>布尔</returns>
+            <remarks>全局变量Get_ExtDoBit</remarks>
+        </member>
+        <member name="M:DAB.Gg.Set_AllServoON(System.Int16,System.Int16,System.Int16)">
+            <summary>
+            伺服使能
+            </summary>
+            <param name="CardNum">卡编号(0~n)</param>
+            <param name="FirstAxis">卡起始轴编号(1~n)</param>
+            <param name="LastAxis">卡末端轴编号</param>
+            <returns>布尔</returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetDi(System.Int32,System.ValueType)">
+            <summary>
+            获取板卡IO[卡号][0-15][1：有输入,0无]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetDo(System.Int16,System.ValueType)">
+            <summary>
+            读取通用输出：1卡号[0,1]，2索引[0,15]；  返回值：1输出打开，0输出关闭
+            </summary>
+            <param name="CardNum"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.SetDo(System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置通用输出:[卡号],[0,15],[1：打开输出，0：关闭输出]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="doIndex"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetExDi(System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输入：GetExDi(模块[0,255]，IO口[0,15]）返回值：0没有输入，1有输入
+            </summary>
+            <param name="mdl"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetExDo(System.Int16,System.ValueType)">
+            <summary>
+            读取扩展输出[模块0-？，输出0-15]
+            </summary>
+            <param name="mdl"></param>主卡上的第几张扩扎卡
+            <param name="i"></param>读取的IO号
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.SetExDo(System.Int16,System.Int16,System.ValueType,System.Int16)">
+            <summary>
+            设置扩展输出：[板卡号],[IO模块(0开始)], [端口号(0开始)],[输出值：1打开，0关闭)]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Mdl"></param>
+            <param name="Index"></param>
+            <param name="i"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetSts(System.Int16,System.Int16)">
+            <summary>
+            清除各轴的报警,限位和读取轴状态
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetServoOnDi(System.Int16,System.Int16)">
+            <summary>
+            读取轴使能状态:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetHomeDi(System.Int32,System.Int16)">
+            <summary>
+            读取原点信号:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.Get_AlarmDi(System.Int32,System.ValueType)">
+            <summary>
+            读取驱动报警:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetLimitDi_Z(System.Int16,System.Int16)">
+            <summary>
+            读取正限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetLimitDi_F(System.Int16,System.Int16)">
+            <summary>
+            读取负限位:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.ZSPD(System.Int16,System.Int16)">
+            <summary>
+            判断马达是否停止运动【目标位置和编码器位置差在0.2mm内】
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetEncPos(System.Int16,System.Int16)">
+            <summary>
+            获取编码器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gCardNum"></param>
+            <param name="gAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetEncPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的编码器位置，单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetPrfPos(System.Int16,System.Int16)">
+            <summary>
+            获取规划器位置,单位plus
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetPrfPosmm(System.Int16,System.Int16)">
+            <summary>
+            获取算好的规划器位置,单位mm
+            参数:[卡号0-4],[轴号1-8]
+            </summary>
+            <param name="gtsardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.PlusPerUnit(System.Int16,System.Int16)">
+            <summary>
+            每1mm的脉冲数：丝杆导成，减速比，每圈脉冲数，PlusPerUnit(卡号[0-1] ,轴号[1-8] )
+            </summary>
+            <param name="CardNum"></param>
+            <param name="AxisNum"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.GetDist(System.Int16,System.Int16,System.Double)">
+            <summary>
+            把距离或角度转换成脉冲
+            </summary>
+            <param name="gtsard"></param>
+            <param name="mAxis"></param>
+            <param name="mDist"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.StepMotion(System.Int16,System.Int16,System.Double,System.Double,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[移动相对距离],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Dist"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.JogMotion(System.Int16,System.Int16,System.Int32,System.String)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[速度],[方向]
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="Vel"></param>
+            <param name="Direction"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.AbsMotion(System.Int16,System.Int16,System.Double,System.Double)">
+            <summary>
+            参数:[卡号0-4],[轴号1-8],[相对于原点的位移距离],[速度]
+            </summary>
+            <param name="aCardNum"></param>
+            <param name="aAxis"></param>
+            <param name="aPosition"></param>
+            <param name="Vel"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.AxisStop(System.Int16,System.Int16)">
+            <summary>
+            停止轴运动（设置运动速度为0模式）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Gg.AxisStart(System.Int16,System.Int16)">
+            <summary>
+            恢复轴运动（速度0-->原有的速度）
+            </summary>
+            <param name="CardNum"></param>
+            <param name="mAxis"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Mod_ErrorCode.WriteErrorCode(System.String,System.Int32)">
+            <summary>
+            WriteErrorCode（[报警内容] , [报警类型]）
+            </summary>
+            <param name="WriteData"></param>
+            <param name="index"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.Mod_ErrorCode.CheckSystemTimeStep">
+            <summary>
+            系统时间同步步序号
+            </summary>
+        </member>
+        <member name="F:DAB.PVar.FileDirectorySrc">
+            <summary>
+            "\\\\169.254.0.10\\live\\";服务器上软件地址
+            </summary>
+        </member>
+        <member name="F:DAB.PVar.FileDirectoryDes">
+            <summary>
+            "D:\\BZ-Program\\"; //复制到本机路径上
+            </summary>
+        </member>
+        <member name="F:DAB.PVar.IsSysEmcStop">
+            <summary>
+            急停是否按下标志
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.sPDCAData">
+            <summary>
+            16位PDCA数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.DS_Flag">
+            <summary>
+            单双标志，值1为单，2为双
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.LampStatus">
+            <summary>
+            三色灯状态序号：
+            【10】异常报警,
+            【20】设备初始化完毕,
+            【30】机器工作正常,
+            【40】机器空跑,
+            【50】开机无报警
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.Work_Mode">
+            <summary>
+            工作模式：正常生产[0],CPK[1],空跑[2]
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_ProgramPath">
+            <summary>
+            当前程序存放路径:"D:\BZ-Program\DAB\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_ParameterPath">
+            <summary>
+            当前设备重要程序重要参数:"D:\BZ-Parameter\DAB\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_DataPath">
+            <summary>
+            当前设备存放数据路径:"E:\BZ-Data\DAB\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_CheckDataPath">
+            <summary>
+            存放复检数据路径:"E:\BZ-Data\DAB\CheckData\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_LogPath">
+            <summary>
+            运行日志路径："E:\BZ-Data\DAB\RunLog\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_CPKDataFilePath">
+            <summary>
+            CPK数据存ini路径:"D:\BZ-Parameter\DAB\CPKData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_YieldDataFileName">
+             <summary>
+            当天良率存放in路径:"D:\BZ-Parameter\DAB\YieldData.ini"
+             </summary>
+             <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_CalibrationFileName">
+            <summary>
+            标定信息存储路径"D:\BZ-Parameter\DAB\Calibration.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_RobotPosFileName">
+            <summary>
+            机械手里面的点位缓存
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_YieldMonthDataFileName">
+            <summary>
+            当月良率存放路径:"D:\BZ-Parameter\DAB\YieldMonthData.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_ErrStatisticsPath">
+            <summary>
+            抛料统计文件路径:"D:\BZ-Parameter\DAB\ErrStatistics.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_PDCALogPath">
+            <summary>
+            PDCA日志记录路径:"E:\BZ-Data\DAB\PDCALog\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_CCD1_ImagePath">
+            <summary>
+            存放图片路径:"E:\BZ-Data\DAB\CCD_Image\当前日期\CCD1\"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_LightSettingPath">
+            <summary>
+            光源参数存放路径:"D:\BZ-Parameter\DAB\LightSetting.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.BZ_AlarmHistoryCSVPath">
+            <summary>
+            异常记录CSV文件路径："E:\BZ-Data\DAB\AlarmHistory_Data\BAMAlarmHistory.csv"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.PublicParPath">
+            <summary>
+            "D:\BZ-Parameter\DAB\PublicPar.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.ParAxisPath">
+            <summary>
+            "D:\BZ-Parameter\DAB\ParAxis.dat"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.CPK_SN_Path">
+            <summary>
+            "D:\BZ-Parameter\DAB\CPK_SN.ini"
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.MeshineSW">
+            <summary>
+            版本编号格式：0x.xx
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.ParAxis">
+            <summary>
+            各参数集合
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="F:DAB.PVar.WorkMode">
+            <summary>
+            0：正常生产，1：CPK，2：GRR
+            </summary>
+        </member>
+        <member name="F:DAB.PVar.mPar.CheckSts">
+            <summary>
+            1:开启安全门；
+            2：开启手持条码枪；
+            3：设备镜像；
+            4：开启外部条码；
+            5：开启SF路径检测；
+            6：；
+            7：开启夹紧定位扫条码；
+            8:空跑开启截图；
+            17：开启演示功能；
+            18：开启一次补正功能；
+            19：开启Errorcode；
+            20：勾上开启PDCA；
+            21：开启HeatBt；
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:DAB.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.hou">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.ni">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.qian">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.shang">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.xia">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.xun">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.you">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:DAB.Properties.Resources.zuo">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="M:DAB.GoHome.GotoHome(System.Int16,System.Int16,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            GotoHome(short CardNum[卡号], short Axis[轴号], double homeToLimitFDist[极限到原点距离], double searchHomeDist[原点搜索距离], double offsetPos[感应宽度], double homeoffset[原点偏移距离], double vel[搜索原点速度])
+            </summary>
+            <param name="CardNum"></param>
+            <param name="Axis"></param>
+            <param name="homeToLimitFDist"></param>
+            <param name="searchHomeDist"></param>
+            <param name="offsetPos"></param>
+            <param name="homeoffset"></param>
+            <param name="vel"></param>
+        </member>
+        <member name="F:DAB.Line1Run.Frm_L1Adddata_tempBarcode">
+            <summary>
+            第一段数据界面增加数据
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:DAB.EpsonRobot.UpdataMaterialCnt">
+            <summary>
+            ******更新料盘数据
+            </summary>
+        </member>
+    </members>
+</doc>

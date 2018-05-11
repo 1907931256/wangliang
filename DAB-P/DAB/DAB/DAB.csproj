@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C8B71EB-F8B8-4FB1-AE1F-AAD8F4D31A81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DAB.Program</StartupObject>
+    <RootNamespace>DAB</RootNamespace>
+    <AssemblyName>DAB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\DAB.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>B_Logo_App.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DAB_48x48.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.7.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="BoTech, Version=1.0.6370.24605, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BoTech.dll</HintPath>
+    </Reference>
+    <Reference Include="BZ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BZ.dll</HintPath>
+    </Reference>
+    <Reference Include="CalNormDistLabrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CalNormDistLabrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SocketHelper, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SocketHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UMA_dll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UMA_APP\bin\Debug\UMA_dll.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\AutoSizeFormClass.cs" />
+    <Compile Include="Control\InfoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\InfoList.Designer.cs">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\InputClass.Designer.cs">
+      <DependentUpon>InputClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\InputClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\LightControl.Designer.cs">
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LightControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Manual_Motion.cs" />
+    <Compile Include="Control\mFunction.cs" />
+    <Compile Include="Control\mMotion.cs" />
+    <Compile Include="Control\MotorStatus.Designer.cs">
+      <DependentUpon>MotorStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MotorStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\OutputClass.Designer.cs">
+      <DependentUpon>OutputClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\OutputClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Teach.Designer.cs">
+      <DependentUpon>Teach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Teach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_AlarmInfo.Designer.cs">
+      <DependentUpon>Frm_AlarmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_AlarmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Dialog.Designer.cs">
+      <DependentUpon>Frm_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Engineering.Designer.cs">
+      <DependentUpon>Frm_Engineering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Engineering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_LoadProcess.designer.cs">
+      <DependentUpon>Frm_LoadProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_LoadProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_MachineInfo.Designer.cs">
+      <DependentUpon>Frm_MachineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_MachineInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Main.designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_MsgList.Designer.cs">
+      <DependentUpon>Frm_MsgList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_MsgList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Par.Designer.cs">
+      <DependentUpon>Frm_Par.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Par.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Par_CCD.Designer.cs">
+      <DependentUpon>Frm_Par_CCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Par_CCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Production.Designer.cs">
+      <DependentUpon>Frm_Production.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_ProgressBar.Designer.cs">
+      <DependentUpon>Frm_ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_RunInfo.Designer.cs">
+      <DependentUpon>Frm_RunInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_RunInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_UI.designer.cs">
+      <DependentUpon>Frm_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_UserManagement.Designer.cs">
+      <DependentUpon>Frm_UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\MessageShow.Designer.cs">
+      <DependentUpon>MessageShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\MessageShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Materiel.designer.cs">
+      <DependentUpon>Frm_Materiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\GUI Forms\Frm_Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BZForm\Material Layout Forms\Frm_Materiel_6.Designer.cs">
+      <DependentUpon>Frm_Materiel_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BZForm\Material Layout Forms\Frm_Materiel_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\其他\API.cs" />
+    <Compile Include="Module\CapScreenApi.cs" />
+    <Compile Include="Module\变量定义\RobotPos.cs" />
+    <Compile Include="Module\变量定义\Xaxis.cs" />
+    <Compile Include="Module\文件操作\FileLog.cs" />
+    <Compile Include="Module\工具函数\TCP_Com_Send.cs" />
+    <Compile Include="Module\工具函数\Tool.cs" />
+    <Compile Include="Module\文件操作\FileRw.cs" />
+    <Compile Include="Module\FunctionSub.cs" />
+    <Compile Include="Module\变量定义\BlogoVariable.cs" />
+    <Compile Include="Module\运动控制\Goolgol.cs" />
+    <Compile Include="Module\报警模块\Mod_ErrorCode.cs" />
+    <Compile Include="Module\变量定义\PublicVariable.cs" />
+    <Compile Include="Module\其他\WinAPI.cs" />
+    <Compile Include="Module\运动控制\gts.cs" />
+    <Compile Include="Module\运动控制\Linechange.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WorkSta\Calibration.cs" />
+    <Compile Include="WorkSta\Home.cs" />
+    <Compile Include="WorkSta\Line1Run.cs" />
+    <Compile Include="WorkSta\PDCA.cs" />
+    <Compile Include="WorkSta\Line2Run.cs" />
+    <Compile Include="WorkSta\Line3Run.cs" />
+    <Compile Include="WorkSta\Line4Run.cs" />
+    <Compile Include="WorkSta\Line0Run.cs" />
+    <Compile Include="WorkSta\RobotRun.cs" />
+    <Compile Include="WorkSta\CCDTest.cs" />
+    <Compile Include="WorkSta\LoadPSARun.cs" />
+    <Compile Include="WorkSta\PressRun.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Main.en-GB.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Main.en-US.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\InfoList.resx">
+      <DependentUpon>InfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\InputClass.resx">
+      <DependentUpon>InputClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LightControl.resx">
+      <DependentUpon>LightControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MotorStatus.resx">
+      <DependentUpon>MotorStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\OutputClass.resx">
+      <DependentUpon>OutputClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Teach.resx">
+      <DependentUpon>Teach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_AlarmInfo.resx">
+      <DependentUpon>Frm_AlarmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Dialog.resx">
+      <DependentUpon>Frm_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Engineering.resx">
+      <DependentUpon>Frm_Engineering.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_LoadProcess.resx">
+      <DependentUpon>Frm_LoadProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_MachineInfo.resx">
+      <DependentUpon>Frm_MachineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_MsgList.resx">
+      <DependentUpon>Frm_MsgList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Par.resx">
+      <DependentUpon>Frm_Par.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Par_CCD.resx">
+      <DependentUpon>Frm_Par_CCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Production.resx">
+      <DependentUpon>Frm_Production.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_ProgressBar.resx">
+      <DependentUpon>Frm_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_RunInfo.resx">
+      <DependentUpon>Frm_RunInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_UI.resx">
+      <DependentUpon>Frm_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_UserManagement.resx">
+      <DependentUpon>Frm_UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\MessageShow.resx">
+      <DependentUpon>MessageShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\GUI Forms\Frm_Materiel.resx">
+      <DependentUpon>Frm_Materiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BZForm\Material Layout Forms\Frm_Materiel_6.resx">
+      <DependentUpon>Frm_Materiel_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <COMReference Include="AxMSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSScriptControl">
+      <Guid>{0E59F1D2-1FBE-11D0-8FF2-00A0D10038BC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\背景透明\zuo.png" />
+    <None Include="Icon\背景透明\you.png" />
+    <None Include="Icon\背景透明\xun.png" />
+    <None Include="Icon\背景透明\xia.png" />
+    <None Include="Icon\背景透明\shang.png" />
+    <None Include="Icon\背景透明\qian.png" />
+    <None Include="Icon\背景透明\ni.png" />
+    <None Include="Icon\背景透明\hou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAB_48x48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Module\数据上传\" />
+    <Folder Include="Module\标定模块\" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>

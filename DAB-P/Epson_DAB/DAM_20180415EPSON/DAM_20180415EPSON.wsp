@@ -1,0 +1,218 @@
+ENVT0100,LM:2018/05/07 04:07:53:128,DS:0000003116,CS:38523,MA:C4-00-AD-06-04-2B,EI:           
+sActiveChild="机器人管理芢x"
+bMdiMaximized=False
+nProgramFileCount=1
+ProgramFile1 {
+	sName="DAB.prg"
+	bOpened=True
+	nWinState=0
+	Window {
+		nLeft=0
+		nTop=5
+		nWidth=831
+		nHeight=540
+	}
+}
+nIncludeFileCount=0
+nPointFileCount=2
+PointFile1 {
+	sName="Points.pts"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=69
+		nTop=35
+		nWidth=577
+		nHeight=351
+	}
+}
+PointFile2 {
+	sName="Points_Backup.pts"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=132
+		nHeight=38
+	}
+}
+nForceFileCount=1
+ForceFile1 {
+	sName="Myforce.frc"
+	bOpened=False
+	nWinState=0
+	Window {
+		nLeft=100
+		nTop=100
+		nWidth=819
+		nHeight=385
+	}
+	nSplitterDistance1=651
+	nSplitterDistance2=399
+	nSplitterDistance3=651
+	nSplitterDistance4=397
+	nSplitterDistance5=651
+	nSplitterDistance6=399
+	nSplitterDistance7=651
+	nSplitterDistance8=397
+}
+sActiveWindow="main.prg"
+CmdWindow {
+	bOpened=True
+	Window {
+		nLeft=146
+		nTop=73
+		nWidth=564
+		nHeight=421
+	}
+	nWinState=0
+}
+RunWindow {
+	bOpened=False
+	Window {
+		nLeft=261
+		nTop=41
+		nWidth=464
+		nHeight=300
+	}
+	nWinState=2
+	nNumOfDisplays=1
+	nSplitterDistance=239
+	Display1 {
+		nCamera=0
+		sSequences="1"
+	}
+	Display2 {
+		nCamera=0
+		sSequences="1"
+	}
+	Display3 {
+		nCamera=0
+		sSequences="1"
+	}
+	Display4 {
+		nCamera=0
+		sSequences="1"
+	}
+	Display5 {
+		nCamera=0
+		sSequences="1"
+	}
+	Display6 {
+		nCamera=0
+		sSequences="1"
+	}
+}
+IOLabelEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=903
+		nHeight=401
+	}
+	nWinState=0
+}
+IOMonitor {
+	bOpened=False
+	Window {
+		nLeft=538
+		nTop=97
+		nWidth=478
+		nHeight=346
+	}
+}
+Simulator {
+	bOpened=False
+	Window {
+		nLeft=237
+		nTop=26
+		nWidth=775
+		nHeight=479
+	}
+}
+TaskMgr {
+	bOpened=False
+	Window {
+		nLeft=391
+		nTop=163
+		nWidth=478
+		nHeight=258
+	}
+}
+Macros {
+	bOpened=False
+	Window {
+		nLeft=444
+		nTop=155
+		nWidth=478
+		nHeight=418
+	}
+}
+RobotMgr {
+	bOpened=True
+	Window {
+		nLeft=18
+		nTop=17
+		nWidth=698
+		nHeight=477
+	}
+}
+UserErrorEditor {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=903
+		nHeight=401
+	}
+	nWinState=0
+}
+VisionGuide {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=0
+		nHeight=0
+	}
+	nWinState=0
+	bShowFlowChart=True
+	nSplitterDistance1=0
+	nSplitterDistance2=0
+	nSplitterDistance3=0
+	nSplitterDistance4=0
+	nSplitterDistance5=0
+}
+GUIBuilder {
+	bOpened=False
+	Window {
+		nLeft=0
+		nTop=0
+		nWidth=870
+		nHeight=576
+	}
+	nWinState=0
+	nSplitterDistance1=0
+	nSplitterDistance2=0
+	nSplitterDistance3=0
+	nSplitterDistance4=0
+}
+ProjectExplorer {
+	bProgramsOpened=True
+	bIncludesOpened=False
+	bLabelsOpened=True
+	bMacrosOpened=True
+	bFunctionsOpened=False
+	bVisionOpened=True
+	bVisionSequencesOpened=False
+	bVisionCalibsOpened=False
+	bGUIBOpened=False
+	bGUIBFormsOpened=False
+	bRobotPointsOpened=True
+	bCommonPointsOpened=False
+	bForcesOpened=True
+	bCommonForcesOpened=False
+	bRobotsOpened1=True
+}
