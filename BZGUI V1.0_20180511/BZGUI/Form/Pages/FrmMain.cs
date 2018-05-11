@@ -25,7 +25,7 @@ namespace BZGUI
     public partial class FrmMain : Form
     {
         #region 变量定义
-
+        private int i;
         private Dictionary<BoTech.Button, Control> pageMap = new Dictionary<BoTech.Button, Control>();
         private PageEngineering PageEngineering;
         private Frm_Dialog fdg=new Frm_Dialog();
